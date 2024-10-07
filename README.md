@@ -1,1 +1,8 @@
-# ZombieShooter
+# Zombie Shooter
+
+## About
+
+## Mechanics
+
+## Credits
+
