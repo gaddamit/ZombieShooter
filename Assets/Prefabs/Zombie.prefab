@@ -604,7 +604,7 @@ MonoBehaviour:
         tooltip: 
         showInInspector: 1
         networkSync: 0
-        value: {fileID: 0}
+        value: {fileID: 5981460521370647493, guid: 250fb49004fae446d8540fb33157f3c8, type: 3}
       objectVariables: []
       materialVariables: []
       textureVariables: []
