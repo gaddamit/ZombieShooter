@@ -575,6 +575,7 @@ GameObject:
   - component: {fileID: 765900227}
   - component: {fileID: 765900226}
   - component: {fileID: 765900228}
+  - component: {fileID: 765900229}
   m_Layer: 0
   m_Name: PlayerDummy
   m_TagString: Player
@@ -684,6 +685,33 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!50 &765900229
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 765900225}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &787975974
 GameObject:
   m_ObjectHideFlags: 0
@@ -1785,7 +1813,7 @@ MonoBehaviour:
   m_Area: 1
   m_IgnoreFromBuild: 0
   m_AffectedAgents: ffffffff
---- !u!1001 &6993382702862212229
+--- !u!1001 &6303954655277388476
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -1793,59 +1821,63 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1784866283957247567, guid: 12eb23828cd144feca1432ad987df4bf, type: 3}
-      propertyPath: fsm.states.Array.data[0].actionData.fsmGameObjectParams.Array.data[0].value
-      value: 
-      objectReference: {fileID: 765900225}
-    - target: {fileID: 1784866283957247567, guid: 12eb23828cd144feca1432ad987df4bf, type: 3}
-      propertyPath: fsm.states.Array.data[0].actionData.fsmGameObjectParams.Array.data[1].value
-      value: 
-      objectReference: {fileID: 765900225}
-    - target: {fileID: 1784866283957247567, guid: 12eb23828cd144feca1432ad987df4bf, type: 3}
-      propertyPath: fsm.states.Array.data[1].actionData.fsmGameObjectParams.Array.data[0].value
-      value: 
-      objectReference: {fileID: 765900225}
-    - target: {fileID: 4096185795514837500, guid: 12eb23828cd144feca1432ad987df4bf, type: 3}
+    - target: {fileID: 1393830368268018233, guid: 12eb23828cd144feca1432ad987df4bf, type: 3}
       propertyPath: m_Name
       value: Zombie
       objectReference: {fileID: 0}
-    - target: {fileID: 4704596202462264137, guid: 12eb23828cd144feca1432ad987df4bf, type: 3}
+    - target: {fileID: 8719563757520326021, guid: 12eb23828cd144feca1432ad987df4bf, type: 3}
+      propertyPath: fsm.variables.gameObjectVariables.Array.data[0].value
+      value: 
+      objectReference: {fileID: 765900225}
+    - target: {fileID: 8719563757520326021, guid: 12eb23828cd144feca1432ad987df4bf, type: 3}
+      propertyPath: fsm.states.Array.data[0].actionData.fsmGameObjectParams.Array.data[0].value
+      value: 
+      objectReference: {fileID: 765900225}
+    - target: {fileID: 8719563757520326021, guid: 12eb23828cd144feca1432ad987df4bf, type: 3}
+      propertyPath: fsm.states.Array.data[0].actionData.fsmGameObjectParams.Array.data[1].value
+      value: 
+      objectReference: {fileID: 765900225}
+    - target: {fileID: 8719563757520326021, guid: 12eb23828cd144feca1432ad987df4bf, type: 3}
+      propertyPath: fsm.states.Array.data[1].actionData.fsmGameObjectParams.Array.data[0].value
+      value: 
+      objectReference: {fileID: 765900225}
+    - target: {fileID: 9161676959140070029, guid: 12eb23828cd144feca1432ad987df4bf, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.83
+      value: -17.74
       objectReference: {fileID: 0}
-    - target: {fileID: 4704596202462264137, guid: 12eb23828cd144feca1432ad987df4bf, type: 3}
+    - target: {fileID: 9161676959140070029, guid: 12eb23828cd144feca1432ad987df4bf, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 2.3
       objectReference: {fileID: 0}
-    - target: {fileID: 4704596202462264137, guid: 12eb23828cd144feca1432ad987df4bf, type: 3}
+    - target: {fileID: 9161676959140070029, guid: 12eb23828cd144feca1432ad987df4bf, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4704596202462264137, guid: 12eb23828cd144feca1432ad987df4bf, type: 3}
+    - target: {fileID: 9161676959140070029, guid: 12eb23828cd144feca1432ad987df4bf, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4704596202462264137, guid: 12eb23828cd144feca1432ad987df4bf, type: 3}
+    - target: {fileID: 9161676959140070029, guid: 12eb23828cd144feca1432ad987df4bf, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4704596202462264137, guid: 12eb23828cd144feca1432ad987df4bf, type: 3}
+    - target: {fileID: 9161676959140070029, guid: 12eb23828cd144feca1432ad987df4bf, type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4704596202462264137, guid: 12eb23828cd144feca1432ad987df4bf, type: 3}
+    - target: {fileID: 9161676959140070029, guid: 12eb23828cd144feca1432ad987df4bf, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4704596202462264137, guid: 12eb23828cd144feca1432ad987df4bf, type: 3}
+    - target: {fileID: 9161676959140070029, guid: 12eb23828cd144feca1432ad987df4bf, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4704596202462264137, guid: 12eb23828cd144feca1432ad987df4bf, type: 3}
+    - target: {fileID: 9161676959140070029, guid: 12eb23828cd144feca1432ad987df4bf, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4704596202462264137, guid: 12eb23828cd144feca1432ad987df4bf, type: 3}
+    - target: {fileID: 9161676959140070029, guid: 12eb23828cd144feca1432ad987df4bf, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
@@ -1859,7 +1891,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1156325107}
-  - {fileID: 6993382702862212229}
+  - {fileID: 6303954655277388476}
   - {fileID: 765900227}
   - {fileID: 787975975}
   - {fileID: 1551509741}
