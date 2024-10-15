@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Game.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/ZombieTest.unity
+    guid: 1048b50e6de1543f58f699d606c6c881
+  - enabled: 1
+    path: Assets/Scenes/Weapon test.unity
+    guid: 9759660fc8df7471cbd02800744211ed
   m_configObjects: {}
