@@ -2452,7 +2452,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9083327842725714203, guid: 1f40bc22c9f3e4e11b1431bd9b643fac, type: 3}
       propertyPath: fsm.variables.intVariables.Array.data[0].value
-      value: 200
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 9083327842725714203, guid: 1f40bc22c9f3e4e11b1431bd9b643fac, type: 3}
       propertyPath: fsm.variables.arrayVariables.Array.data[0].objectReferences.Array.data[0]
