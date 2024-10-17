@@ -229,16 +229,24 @@ MonoBehaviour:
       actionData:
         actionNames:
         - HutongGames.PlayMaker.Actions.SetAgentDestinationAsGameObject
+        - HutongGames.PlayMaker.Actions.LookAt2dGameObject
         - HutongGames.PlayMaker.Actions.Collision2dEvent
         customNames:
         - 
         - 
-        actionEnabled: 0101
-        actionIsOpen: 0101
-        actionStartIndex: 0000000003000000
-        actionHashCodes: f0eeac010ef11c05
+        - 
+        actionEnabled: 010101
+        actionIsOpen: 010101
+        actionStartIndex: 000000000300000009000000
+        actionHashCodes: f0eeac01756c37030ef11c05
         unityObjectParams: []
         fsmGameObjectParams:
+        - useVariable: 1
+          name: PlayerLocation
+          tooltip: 
+          showInInspector: 1
+          networkSync: 0
+          value: {fileID: 7036484338320204979, guid: 678c9a0369f5ae4478346a80b4987a1d, type: 3}
         - useVariable: 1
           name: PlayerLocation
           tooltip: 
@@ -252,6 +260,14 @@ MonoBehaviour:
           networkSync: 0
           value: {fileID: 0}
         fsmOwnerDefaultParams:
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
         - ownerOption: 0
           gameObject:
             useVariable: 0
@@ -292,6 +308,12 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 1
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
         - useVariable: 1
           name: 
           tooltip: 
@@ -306,23 +328,41 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
         fsmVector2Params: []
         fsmVector3Params: []
-        fsmColorParams: []
+        fsmColorParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {r: 0, g: 1, b: 0, a: 1}
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams:
         - Attack
-        byteData: 01000000
+        byteData: 0101000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 14000000130000000f0000001400000007000000110000001200000017000000130000000f000000
+        paramDataType: 14000000130000000f00000014000000130000000f0000001100000019000000010000001400000007000000110000001200000017000000130000000f000000
         paramName:
         - gameObject
         - destination
         - triggerThreshold
+        - gameObject
+        - targetObject
+        - rotationOffset
+        - debug
+        - debugLineColor
+        - everyFrame
         - gameObject
         - collision
         - ignoreDisabled
@@ -330,8 +370,8 @@ MonoBehaviour:
         - sendEvent
         - storeCollider
         - storeForce
-        paramDataPos: 00000000000000000000000001000000000000000000000000000000000000000100000001000000
-        paramByteDataSize: 00000000000000000000000000000000040000000000000000000000000000000000000000000000
+        paramDataPos: 00000000000000000000000001000000010000000100000000000000000000000000000002000000010000000100000000000000000000000200000002000000
+        paramByteDataSize: 00000000000000000000000000000000000000000000000000000000000000000100000000000000040000000000000000000000000000000000000000000000
     - name: Damage Player
       description: 
       colorIndex: 0
