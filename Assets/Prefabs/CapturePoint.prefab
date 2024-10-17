@@ -698,7 +698,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: {r: 0.089953184, g: 1, b: 0, a: 0.5019608}
+          value: {r: 0, g: 0.990309, b: 1, a: 0.5019608}
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams: []
@@ -953,7 +953,13 @@ MonoBehaviour:
         networkSync: 0
         value: 30
       intVariables: []
-      boolVariables: []
+      boolVariables:
+      - useVariable: 1
+        name: 
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 0
       stringVariables: []
       vector2Variables: []
       vector3Variables: []
@@ -968,7 +974,7 @@ MonoBehaviour:
       enumVariables: []
       categories:
       - 
-      variableCategoryIDs: 00000000
+      variableCategoryIDs: 0000000000000000
     description: 
     docUrl: 
     showStateLabel: 0
