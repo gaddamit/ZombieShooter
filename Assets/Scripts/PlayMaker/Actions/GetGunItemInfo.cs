@@ -18,7 +18,9 @@ namespace HutongGames.PlayMaker.Actions
 		[ObjectType(typeof(GameObject))]
 		public FsmObject bulletPrefab;
 		[ObjectType(typeof(Sprite))]
-		public FsmObject gunSprite;
+		public FsmObject levelSprite;
+		[ObjectType(typeof(Sprite))]
+		public FsmObject uiSprite;
 		[ObjectType(typeof(GunSO))]
 		public FsmObject ItemReference;
 		// Code that runs on entering the state.
@@ -34,8 +36,8 @@ namespace HutongGames.PlayMaker.Actions
 			bulletSpeed.Value = ((GunSO)ItemReference.Value).bulletSpeed;
 			bulletLifeTime.Value = ((GunSO)ItemReference.Value).bulletLifeTime;
 			bulletPrefab.Value = ((GunSO)ItemReference.Value).bulletPrefab;
-			gunSprite.Value = ((GunSO)ItemReference.Value).gunSprite;
-
+			levelSprite.Value = ((GunSO)ItemReference.Value).levelSprite;
+			uiSprite.Value = ((GunSO)ItemReference.Value).uiSprite;
 			Finish();
 		}
 

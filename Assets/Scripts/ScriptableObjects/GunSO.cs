@@ -15,5 +15,6 @@ public class GunSO : ScriptableObject
     public float bulletSpeed;
     public float bulletLifeTime;
     public GameObject bulletPrefab;
-    public Sprite gunSprite;
+    public Sprite levelSprite;
+    public Sprite uiSprite;
 }
