@@ -3,7 +3,7 @@ using UnityEngine;
 namespace HutongGames.PlayMaker.Actions
 {
 
-	[ActionCategory("CustomActions")]
+	[ActionCategory("Custom")]
 	public class GetGunItemInfo : FsmStateAction
 	{
 		public FsmString gunName;
@@ -35,7 +35,7 @@ namespace HutongGames.PlayMaker.Actions
 			bulletLifeTime.Value = ((GunSO)ItemReference.Value).bulletLifeTime;
 			bulletPrefab.Value = ((GunSO)ItemReference.Value).bulletPrefab;
 			gunSprite.Value = ((GunSO)ItemReference.Value).gunSprite;
-			
+
 			Finish();
 		}
 
