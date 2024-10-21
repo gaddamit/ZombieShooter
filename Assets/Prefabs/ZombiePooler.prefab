@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3221811566739537958
+--- !u!1 &6573564059719212581
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,37 +8,37 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 887044751268897828}
-  - component: {fileID: 9083327842725714203}
+  - component: {fileID: 6815766654526144074}
+  - component: {fileID: 4484435412793130091}
   m_Layer: 0
-  m_Name: ZombieSpawnManager
+  m_Name: ZombiePooler
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &887044751268897828
+--- !u!4 &6815766654526144074
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3221811566739537958}
+  m_GameObject: {fileID: 6573564059719212581}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -1.6935, y: -2.1092784, z: -0.028703328}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &9083327842725714203
+--- !u!114 &4484435412793130091
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3221811566739537958}
+  m_GameObject: {fileID: 6573564059719212581}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1384774831, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
@@ -47,33 +47,48 @@ MonoBehaviour:
   fsm:
     dataVersion: 2
     usedInTemplate: {fileID: 0}
-    name: ZombieSpawner
-    startState: State 1
+    name: ZombiePooler
+    startState: Create Pool
     states:
-    - name: State 2
+    - name: Create Pool
       description: 
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 182
-        y: 114.5
-        width: 120
-        height: 16
+        x: 50
+        y: 100
+        width: 100
+        height: 32
       isBreakpoint: 0
       isSequence: 0
       hideUnused: 0
-      transitions: []
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: Ready
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
       actionData:
         actionNames:
-        - HutongGames.PlayMaker.Actions.DebugLog
+        - HutongGames.PlayMaker.Actions.PoolerPool
         customNames:
         - 
         actionEnabled: 01
         actionIsOpen: 01
         actionStartIndex: 00000000
-        actionHashCodes: 9c59e501
+        actionHashCodes: b1f58003
         unityObjectParams: []
-        fsmGameObjectParams: []
+        fsmGameObjectParams:
+        - useVariable: 1
+          name: ZombiePrefab
+          tooltip: 
+          showInInspector: 1
+          networkSync: 0
+          value: {fileID: 0}
         fsmOwnerDefaultParams: []
         animationCurveParams: []
         functionCallParams: []
@@ -87,39 +102,66 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: Sent event
+          value: Zombies
         fsmObjectParams: []
         fsmVarParams: []
         fsmArrayParams: []
         fsmEnumParams: []
         fsmFloatParams: []
-        fsmIntParams: []
-        fsmBoolParams: []
+        fsmIntParams:
+        - useVariable: 1
+          name: NumOfPooledZombies
+          tooltip: 
+          showInInspector: 1
+          networkSync: 0
+          value: 5
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        fsmBoolParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
         fsmVector2Params: []
         fsmVector3Params: []
         fsmColorParams: []
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams: []
-        byteData: 0000000001
+        byteData: 
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 070000001200000001000000
+        paramDataType: 130000001200000010000000110000001000000011000000
         paramName:
-        - logLevel
-        - text
-        - sendToUnityLog
-        paramDataPos: 000000000000000004000000
-        paramByteDataSize: 040000000000000001000000
-    - name: State 1
+        - PrefabToPool
+        - NameOfThePool
+        - InitiallyPooledObjects
+        - CanGrow
+        - MaxPooledObjects
+        - recycle
+        paramDataPos: 000000000000000000000000000000000100000001000000
+        paramByteDataSize: 000000000000000000000000000000000000000000000000
+    - name: Ready
       description: 
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 57.976562
-        y: 112.5
+        x: 213.58594
+        y: 101.78906
         width: 100
         height: 16
       isBreakpoint: 0
@@ -166,31 +208,19 @@ MonoBehaviour:
         paramDataPos: 
         paramByteDataSize: 
     events:
-    - name: StartWave
-      isSystemEvent: 0
+    - name: FINISHED
+      isSystemEvent: 1
       isGlobal: 0
-    - name: SpawnZombies
-      isSystemEvent: 0
-      isGlobal: 1
-    globalTransitions:
-    - fsmEvent:
-        name: SpawnZombies
-        isSystemEvent: 0
-        isGlobal: 1
-      toState: State 2
-      linkStyle: 0
-      linkConstraint: 0
-      linkTarget: 0
-      colorIndex: 0
+    globalTransitions: []
     variables:
       floatVariables: []
       intVariables:
       - useVariable: 1
-        name: 
+        name: NumOfPooledZombies
         tooltip: 
         showInInspector: 1
         networkSync: 0
-        value: 0
+        value: 20
       boolVariables: []
       stringVariables: []
       vector2Variables: []
@@ -200,38 +230,19 @@ MonoBehaviour:
       quaternionVariables: []
       gameObjectVariables:
       - useVariable: 1
-        name: 
+        name: ZombiePrefab
         tooltip: 
         showInInspector: 1
-        networkSync: 0
-        value: {fileID: 0}
-      - useVariable: 1
-        name: 
-        tooltip: 
-        showInInspector: 0
         networkSync: 0
         value: {fileID: 0}
       objectVariables: []
       materialVariables: []
       textureVariables: []
-      arrayVariables:
-      - useVariable: 1
-        name: 
-        tooltip: 
-        showInInspector: 1
-        networkSync: 0
-        type: 3
-        objectTypeName: UnityEngine.GameObject
-        floatValues: []
-        intValues: 
-        boolValues: 
-        stringValues: []
-        vector4Values: []
-        objectReferences: []
+      arrayVariables: []
       enumVariables: []
       categories:
       - 
-      variableCategoryIDs: 00000000000000000000000000000000
+      variableCategoryIDs: 0000000000000000
     description: 
     docUrl: 
     showStateLabel: 0
