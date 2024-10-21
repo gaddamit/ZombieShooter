@@ -223,7 +223,7 @@ MonoBehaviour:
         functionCallParams: []
         fsmTemplateControlParams: []
         fsmEventTargetParams:
-        - target: 1
+        - target: 4
           excludeSelf:
             useVariable: 0
             name: 
@@ -232,7 +232,7 @@ MonoBehaviour:
             networkSync: 0
             value: 0
           gameObject:
-            ownerOption: 1
+            ownerOption: 0
             gameObject:
               useVariable: 0
               name: 
