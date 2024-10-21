@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b660636c-743f-4be4-9b6f-55db5b7dd21b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/BasicZombie.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/BasicZombie.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ZombieShooter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ZombieShooter/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SpeedZombie.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/SpeedZombie.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/ZombieSpawnManager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/ZombieSpawnManager.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Weapon test.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Weapon test.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/ZombieTest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/ZombieTest.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +34,9 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ai.navigation@1.1.5/Editor/NavigationOverlay.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="SWEA" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -43,7 +48,7 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;OtherZombies&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;ZombieSpawner&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -103,6 +108,10 @@
       <workItem from="1728418094163" duration="20000" />
       <workItem from="1729009034036" duration="609000" />
       <workItem from="1729184920105" duration="14000" />
+      <workItem from="1729369926533" duration="5000" />
+      <workItem from="1729369937381" duration="3000" />
+      <workItem from="1729477369077" duration="458000" />
+      <workItem from="1729477985172" duration="205000" />
     </task>
     <servers />
   </component>
