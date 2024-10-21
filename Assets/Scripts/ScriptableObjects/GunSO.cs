@@ -7,13 +7,14 @@ public class GunSO : ScriptableObject
 {
     public string gunName;
     public string description;
+    [Range(0, 5)]
     public float fireRate;
+    [Range(0, 50)]
     public float range;
+    [Range(-1, 100)]
     public int maxAmmo;
     public float recoil;
     public bool spread;
-    public float bulletSpeed;
-    public float bulletLifeTime;
     public GameObject bulletPrefab;
     public Sprite levelSprite;
     public Sprite uiSprite;

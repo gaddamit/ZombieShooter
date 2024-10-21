@@ -15,11 +15,12 @@ MonoBehaviour:
   gunName: Shotgun
   description: Shotgun
   fireRate: 2
-  range: 2
-  maxAmmo: 20
+  range: 5
+  maxAmmo: 10
   recoil: 0
   spread: 1
-  bulletSpeed: 10
+  bulletSpeed: 5
   bulletLifeTime: 1
   bulletPrefab: {fileID: 0}
-  gunSprite: {fileID: -607456373, guid: c90fc6250289148dbab5a934c720f27e, type: 3}
+  levelSprite: {fileID: -607456373, guid: c90fc6250289148dbab5a934c720f27e, type: 3}
+  uiSprite: {fileID: -2142190921, guid: b94a54c76f3a54a0493da8b244d693d4, type: 3}

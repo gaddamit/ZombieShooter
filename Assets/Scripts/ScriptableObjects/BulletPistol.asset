@@ -10,11 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b319a90c63792430592312deb7496ee1, type: 3}
-  m_Name: BulletBasic
+  m_Name: BulletPistol
   m_EditorClassIdentifier: 
-  bulletName: 
-  damage: 0
-  speed: 0
-  lifeTime: 0
-  size: 0
+  bulletName: Pistol Bullet
+  damage: 1
+  travelTime: 0.3
+  lifeTime: 0.3
+  size: 1
   bulletSprite: {fileID: 0}
+  hitEffect: {fileID: 4021103657954561961, guid: 8e410efe9c8e44527aa355c1ee432da9, type: 3}
+  trailEffect: {fileID: 0}
+  hitSound: {fileID: 0}
+  shootSound: {fileID: 0}
