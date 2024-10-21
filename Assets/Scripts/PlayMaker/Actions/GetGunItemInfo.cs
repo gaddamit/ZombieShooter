@@ -13,8 +13,6 @@ namespace HutongGames.PlayMaker.Actions
 		public FsmInt maxAmmo;
 		public FsmFloat recoil;
 		public FsmBool isSpread;
-		public FsmFloat bulletSpeed;
-		public FsmFloat bulletLifeTime;
 		[ObjectType(typeof(GameObject))]
 		public FsmObject bulletPrefab;
 		[ObjectType(typeof(Sprite))]
@@ -33,15 +31,10 @@ namespace HutongGames.PlayMaker.Actions
 			maxAmmo.Value = ((GunSO)ItemReference.Value).maxAmmo;
 			recoil.Value = ((GunSO)ItemReference.Value).recoil;
 			isSpread.Value = ((GunSO)ItemReference.Value).spread;
-			bulletSpeed.Value = ((GunSO)ItemReference.Value).bulletSpeed;
-			bulletLifeTime.Value = ((GunSO)ItemReference.Value).bulletLifeTime;
 			bulletPrefab.Value = ((GunSO)ItemReference.Value).bulletPrefab;
 			levelSprite.Value = ((GunSO)ItemReference.Value).levelSprite;
 			uiSprite.Value = ((GunSO)ItemReference.Value).uiSprite;
 			Finish();
 		}
-
-
 	}
-
 }
