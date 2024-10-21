@@ -83,3 +83,4 @@ MonoBehaviour:
   events:
   - StartSpawning
   - SpawnZombies
+  - StartMoving
