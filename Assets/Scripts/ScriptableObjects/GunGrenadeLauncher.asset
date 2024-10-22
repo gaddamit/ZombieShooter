@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6c9081d876b5844b69ef810240e8a527, type: 3}
-  m_Name: GunPistol
+  m_Name: GunGrenadeLauncher
   m_EditorClassIdentifier: 
-  gunName: Pistol
-  description: Pistol
-  fireRate: 0
+  gunName: Grenade Launcher
+  description: Grenade Launcher
+  fireRate: 1
   range: 10
   maxAmmo: -1
   recoil: 0
   spread: 0
-  bulletPrefab: {fileID: 3621924927723889370, guid: 66b505314016f49ebb9c4a4ba5d6a359, type: 3}
-  levelSprite: {fileID: 301532372, guid: c90fc6250289148dbab5a934c720f27e, type: 3}
-  uiSprite: {fileID: -917439969, guid: b94a54c76f3a54a0493da8b244d693d4, type: 3}
+  bulletPrefab: {fileID: 3621924927723889370, guid: 906fe73b73d6e4df2bd93fd5627c6cf3, type: 3}
+  levelSprite: {fileID: 759220915, guid: c90fc6250289148dbab5a934c720f27e, type: 3}
+  uiSprite: {fileID: -2009310559, guid: b94a54c76f3a54a0493da8b244d693d4, type: 3}

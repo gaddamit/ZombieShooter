@@ -12,9 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b319a90c63792430592312deb7496ee1, type: 3}
   m_Name: BulletGrenade
   m_EditorClassIdentifier: 
-  bulletName: 
-  damage: 0
-  speed: 0
-  lifeTime: 0
-  size: 0
-  bulletSprite: {fileID: 0}
+  bulletName: Grenade Bullet
+  damage: 1
+  travelTime: 0.5
+  lifeTime: 0.5
+  size: 1
+  bulletSprite: {fileID: 769648784, guid: c90fc6250289148dbab5a934c720f27e, type: 3}
+  hitEffect: {fileID: 725748389856807714, guid: 4bda94453d2ca7444a0fff05b2d425f5, type: 3}
+  trailEffect: {fileID: 0}
+  hitSound: {fileID: 0}
+  shootSound: {fileID: 0}

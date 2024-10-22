@@ -12,9 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b319a90c63792430592312deb7496ee1, type: 3}
   m_Name: BulletShotgun
   m_EditorClassIdentifier: 
-  bulletName: 
-  damage: 0
-  speed: 0
-  lifeTime: 0
-  size: 0
+  bulletName: Shotgun Bullet
+  damage: 1
+  travelTime: 1
+  lifeTime: 1
+  size: 1
   bulletSprite: {fileID: 0}
+  hitEffect: {fileID: 4021103657954561961, guid: 5c755f9bc5253ea418e919994537dcc7, type: 3}
+  trailEffect: {fileID: 0}
+  hitSound: {fileID: 0}
+  shootSound: {fileID: 0}
