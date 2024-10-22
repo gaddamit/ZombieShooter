@@ -9,6 +9,7 @@ TagManager:
   - Ammo
   - Gun
   - CapturePoint
+  - Melee
   layers:
   - Default
   - TransparentFX
