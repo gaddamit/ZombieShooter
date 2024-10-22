@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3221811566739537958
+--- !u!1 &2627374006587752399
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,37 +8,37 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 887044751268897828}
-  - component: {fileID: 9083327842725714203}
+  - component: {fileID: 2944741745772623752}
+  - component: {fileID: 477329413621250057}
   m_Layer: 0
-  m_Name: ZombieSpawnManager
+  m_Name: SpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &887044751268897828
+--- !u!4 &2944741745772623752
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3221811566739537958}
+  m_GameObject: {fileID: 2627374006587752399}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -14.75, y: -0.119632006, z: -0.0527705}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &9083327842725714203
+--- !u!114 &477329413621250057
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3221811566739537958}
+  m_GameObject: {fileID: 2627374006587752399}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1384774831, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
@@ -47,291 +47,31 @@ MonoBehaviour:
   fsm:
     dataVersion: 2
     usedInTemplate: {fileID: 0}
-    name: ZombieSpawner
-    startState: State 1
+    name: FSM
+    startState: Set Limit
     states:
-    - name: Create Zombie
+    - name: Set Limit
       description: 
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 427.52344
-        y: 110.078125
-        width: 117
-        height: 32
-      isBreakpoint: 0
-      isSequence: 0
-      hideUnused: 0
-      transitions:
-      - fsmEvent:
-          name: FINISHED
-          isSystemEvent: 1
-          isGlobal: 0
-        toState: idk
-        linkStyle: 0
-        linkConstraint: 0
-        linkTarget: 0
-        colorIndex: 0
-      actionData:
-        actionNames:
-        - HutongGames.PlayMaker.Actions.CreateObject
-        customNames:
-        - 
-        actionEnabled: 01
-        actionIsOpen: 01
-        actionStartIndex: 00000000
-        actionHashCodes: 60532301
-        unityObjectParams: []
-        fsmGameObjectParams:
-        - useVariable: 1
-          name: ZombiePrefab
-          tooltip: 
-          showInInspector: 1
-          networkSync: 0
-          value: {fileID: 1393830368268018233, guid: 12eb23828cd144feca1432ad987df4bf, type: 3}
-        - useVariable: 1
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: {fileID: 0}
-        - useVariable: 1
-          name: CurrentSpawnPoint
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: {fileID: 0}
-        - useVariable: 1
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: {fileID: 0}
-        fsmOwnerDefaultParams: []
-        animationCurveParams: []
-        functionCallParams: []
-        fsmTemplateControlParams: []
-        fsmEventTargetParams: []
-        fsmPropertyParams: []
-        layoutOptionParams: []
-        fsmStringParams: []
-        fsmObjectParams: []
-        fsmVarParams: []
-        fsmArrayParams: []
-        fsmEnumParams: []
-        fsmFloatParams: []
-        fsmIntParams: []
-        fsmBoolParams: []
-        fsmVector2Params: []
-        fsmVector3Params:
-        - useVariable: 1
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: {x: 0, y: 0, z: 0}
-        - useVariable: 1
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: {x: 0, y: 0, z: 0}
-        fsmColorParams: []
-        fsmRectParams: []
-        fsmQuaternionParams: []
-        stringParams: []
-        byteData: 
-        arrayParamSizes: 
-        arrayParamTypes: []
-        customTypeSizes: 
-        customTypeNames: []
-        paramDataType: 1300000013000000130000001c0000001c00000013000000
-        paramName:
-        - gameObject
-        - parent
-        - spawnPoint
-        - position
-        - rotation
-        - storeObject
-        paramDataPos: 000000000100000002000000000000000100000003000000
-        paramByteDataSize: 000000000000000000000000000000000000000000000000
-    - name: idk
-      description: 
-      colorIndex: 0
-      position:
-        serializedVersion: 2
-        x: 242.10156
-        y: 111.5
+        x: 428.0703
+        y: 110
         width: 100
-        height: 48
+        height: 16
       isBreakpoint: 0
       isSequence: 0
       hideUnused: 0
-      transitions:
-      - fsmEvent:
-          name: Done
-          isSystemEvent: 0
-          isGlobal: 0
-        toState: State 1
-        linkStyle: 0
-        linkConstraint: 0
-        linkTarget: 0
-        colorIndex: 0
-      - fsmEvent:
-          name: loop
-          isSystemEvent: 0
-          isGlobal: 0
-        toState: Create Zombie
-        linkStyle: 0
-        linkConstraint: 0
-        linkTarget: 0
-        colorIndex: 0
+      transitions: []
       actionData:
         actionNames:
-        - HutongGames.PlayMaker.Actions.ArrayGetNext
+        - HutongGames.PlayMaker.Actions.SetIntValue
         customNames:
         - 
         actionEnabled: 01
         actionIsOpen: 01
         actionStartIndex: 00000000
-        actionHashCodes: 3df26a04
-        unityObjectParams: []
-        fsmGameObjectParams: []
-        fsmOwnerDefaultParams: []
-        animationCurveParams: []
-        functionCallParams: []
-        fsmTemplateControlParams: []
-        fsmEventTargetParams: []
-        fsmPropertyParams: []
-        layoutOptionParams: []
-        fsmStringParams: []
-        fsmObjectParams: []
-        fsmVarParams:
-        - variableName: CurrentSpawnPoint
-          objectType: UnityEngine.GameObject
-          useVariable: 1
-          type: 3
-          floatValue: 0
-          intValue: 0
-          boolValue: 0
-          stringValue: 
-          vector4Value: {x: 0, y: 0, z: 0, w: 0}
-          objectReference: {fileID: 0}
-          arrayValue:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            type: -1
-            objectTypeName: 
-            floatValues: []
-            intValues: 
-            boolValues: 
-            stringValues: []
-            vector4Values: []
-            objectReferences: []
-        fsmArrayParams:
-        - useVariable: 1
-          name: SpawnPoints
-          tooltip: 
-          showInInspector: 1
-          networkSync: 0
-          type: 3
-          objectTypeName: UnityEngine.Object
-          floatValues: []
-          intValues: 
-          boolValues: 
-          stringValues: []
-          vector4Values: []
-          objectReferences:
-          - {fileID: 0}
-          - {fileID: 0}
-          - {fileID: 0}
-        fsmEnumParams: []
-        fsmFloatParams: []
-        fsmIntParams:
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 0
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 0
-        - useVariable: 1
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 0
-        fsmBoolParams:
-        - useVariable: 1
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 0
-        fsmVector2Params: []
-        fsmVector3Params: []
-        fsmColorParams: []
-        fsmRectParams: []
-        fsmQuaternionParams: []
-        stringParams:
-        - loop
-        - Done
-        byteData: 
-        arrayParamSizes: 
-        arrayParamTypes: []
-        customTypeSizes: 
-        customTypeNames: []
-        paramDataType: 2900000010000000100000001700000011000000170000002700000010000000
-        paramName:
-        - array
-        - startIndex
-        - endIndex
-        - loopEvent
-        - resetFlag
-        - finishedEvent
-        - result
-        - currentIndex
-        paramDataPos: 0000000000000000010000000000000000000000010000000000000002000000
-        paramByteDataSize: 0000000000000000000000000000000000000000000000000000000000000000
-    - name: State 1
-      description: 
-      colorIndex: 0
-      position:
-        serializedVersion: 2
-        x: 63.328125
-        y: 105.96875
-        width: 100
-        height: 32
-      isBreakpoint: 0
-      isSequence: 0
-      hideUnused: 0
-      transitions:
-      - fsmEvent:
-          name: loop
-          isSystemEvent: 0
-          isGlobal: 0
-        toState: idk
-        linkStyle: 0
-        linkConstraint: 0
-        linkTarget: 0
-        colorIndex: 0
-      actionData:
-        actionNames:
-        - HutongGames.PlayMaker.Actions.Loop
-        customNames:
-        - 
-        actionEnabled: 01
-        actionIsOpen: 01
-        actionStartIndex: 00000000
-        actionHashCodes: 65c84b02
+        actionHashCodes: 603dd905
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -351,10 +91,270 @@ MonoBehaviour:
         - useVariable: 1
           name: ZombieLimit
           tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 1
+          name: MaxZombies
+          tooltip: 
           showInInspector: 1
           networkSync: 0
           value: 10
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams: []
+        byteData: 00
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 100000001000000001000000
+        paramName:
+        - intVariable
+        - intValue
+        - everyFrame
+        paramDataPos: 000000000100000000000000
+        paramByteDataSize: 000000000000000001000000
+    - name: SpawnZombies
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 56
+        y: 114.5
+        width: 120
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: Done
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: CheckLimit
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.PoolerSpawn
+        - HutongGames.PlayMaker.Actions.IntSubtract
+        - HutongGames.PlayMaker.Actions.SendEvent
+        - HutongGames.PlayMaker.Actions.Wait
+        customNames:
+        - 
+        - 
+        - 
+        - 
+        actionEnabled: 01010101
+        actionIsOpen: 01010101
+        actionStartIndex: 0000000005000000090000000d000000
+        actionHashCodes: 0dc4b10131e5da025e69bb0448c01101
+        unityObjectParams: []
+        fsmGameObjectParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 2627374006587752399}
         - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 0}
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams:
+        - target: 4
+          excludeSelf:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          gameObject:
+            ownerOption: 0
+            gameObject:
+              useVariable: 0
+              name: 
+              tooltip: 
+              showInInspector: 0
+              networkSync: 0
+              value: {fileID: 0}
+          fsmName:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 
+          sendToChildren:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          fsmComponent: {fileID: 0}
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Zombies
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0.5
+        fsmIntParams:
+        - useVariable: 1
+          name: ZombieLimit
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 1
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params:
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {x: 0, y: 0, z: 0}
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {x: 0, y: 0, z: 0}
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams:
+        - StartMoving
+        - Done
+        byteData: 00000000
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 12000000130000001c0000001c00000013000000100000001000000001000000010000001f000000170000000f000000010000000f0000001700000001000000
+        paramName:
+        - NameOfThePool
+        - spawnPoint
+        - position
+        - rotation
+        - storeObject
+        - intVariable
+        - subtract
+        - everyFrame
+        - perSecond
+        - eventTarget
+        - sendEvent
+        - delay
+        - everyFrame
+        - time
+        - finishEvent
+        - realTime
+        paramDataPos: 00000000000000000000000001000000010000000000000001000000000000000100000000000000000000000000000002000000010000000100000003000000
+        paramByteDataSize: 00000000000000000000000000000000000000000000000000000000010000000100000000000000000000000000000001000000000000000000000001000000
+    - name: CheckLimit
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 252
+        y: 115.5
+        width: 113
+        height: 48
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: Loop
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: SpawnZombies
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: Reached Limit
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Set Limit
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.IntCompare
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: 09faa102
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams:
+        - useVariable: 1
+          name: ZombieLimit
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
           name: 
           tooltip: 
           showInInspector: 0
@@ -367,37 +367,61 @@ MonoBehaviour:
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams:
-        - loop
-        - 
-        byteData: 
+        - Reached Limit
+        - Reached Limit
+        - Loop
+        byteData: 00
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 10000000100000001700000017000000
+        paramDataType: 100000001000000017000000170000001700000001000000
         paramName:
-        - loops
-        - storeCurrentLoop
-        - loopEvent
-        - finishEvent
-        paramDataPos: 00000000010000000000000001000000
-        paramByteDataSize: 00000000000000000000000000000000
+        - integer1
+        - integer2
+        - equal
+        - lessThan
+        - greaterThan
+        - everyFrame
+        paramDataPos: 000000000100000000000000010000000200000000000000
+        paramByteDataSize: 000000000000000000000000000000000000000001000000
     events:
+    - name: StartSpawning
+      isSystemEvent: 0
+      isGlobal: 1
     - name: Done
       isSystemEvent: 0
       isGlobal: 0
-    - name: loop
+    - name: Loop
       isSystemEvent: 0
       isGlobal: 0
-    - name: FINISHED
-      isSystemEvent: 1
+    - name: Reached Limit
+      isSystemEvent: 0
       isGlobal: 0
-    globalTransitions: []
+    - name: StartMoving
+      isSystemEvent: 0
+      isGlobal: 1
+    globalTransitions:
+    - fsmEvent:
+        name: StartSpawning
+        isSystemEvent: 0
+        isGlobal: 1
+      toState: SpawnZombies
+      linkStyle: 0
+      linkConstraint: 0
+      linkTarget: 0
+      colorIndex: 0
     variables:
       floatVariables: []
       intVariables:
       - useVariable: 1
         name: ZombieLimit
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 0
+      - useVariable: 1
+        name: MaxZombies
         tooltip: 
         showInInspector: 1
         networkSync: 0
@@ -409,43 +433,15 @@ MonoBehaviour:
       colorVariables: []
       rectVariables: []
       quaternionVariables: []
-      gameObjectVariables:
-      - useVariable: 1
-        name: ZombiePrefab
-        tooltip: 
-        showInInspector: 1
-        networkSync: 0
-        value: {fileID: 1393830368268018233, guid: 12eb23828cd144feca1432ad987df4bf, type: 3}
-      - useVariable: 1
-        name: CurrentSpawnPoint
-        tooltip: 
-        showInInspector: 0
-        networkSync: 0
-        value: {fileID: 0}
+      gameObjectVariables: []
       objectVariables: []
       materialVariables: []
       textureVariables: []
-      arrayVariables:
-      - useVariable: 1
-        name: SpawnPoints
-        tooltip: 
-        showInInspector: 1
-        networkSync: 0
-        type: 3
-        objectTypeName: UnityEngine.Object
-        floatValues: []
-        intValues: 
-        boolValues: 
-        stringValues: []
-        vector4Values: []
-        objectReferences:
-        - {fileID: 0}
-        - {fileID: 0}
-        - {fileID: 0}
+      arrayVariables: []
       enumVariables: []
       categories:
       - 
-      variableCategoryIDs: 00000000000000000000000000000000
+      variableCategoryIDs: 0000000000000000
     description: 
     docUrl: 
     showStateLabel: 0

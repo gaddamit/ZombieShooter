@@ -20,7 +20,13 @@ MonoBehaviour:
       showInInspector: 1
       networkSync: 0
       value: 50
-    intVariables: []
+    intVariables:
+    - useVariable: 1
+      name: NumberOfCapturePoints
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
     boolVariables:
     - useVariable: 1
       name: InUse
@@ -29,7 +35,13 @@ MonoBehaviour:
       networkSync: 0
       value: 0
     - useVariable: 1
-      name: InUseMelee
+      name: Captured
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: IsCaptured
       tooltip: 
       showInInspector: 0
       networkSync: 0
@@ -50,9 +62,25 @@ MonoBehaviour:
     objectVariables: []
     materialVariables: []
     textureVariables: []
-    arrayVariables: []
+    arrayVariables:
+    - useVariable: 1
+      name: CapturePoints
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      type: 3
+      objectTypeName: UnityEngine.Object
+      floatValues: []
+      intValues: 
+      boolValues: 
+      stringValues: []
+      vector4Values: []
+      objectReferences: []
     enumVariables: []
     categories:
     - 
-    variableCategoryIDs: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-  events: []
+    variableCategoryIDs: 00000000000000000000000000000000000000000000000000000000
+  events:
+  - StartSpawning
+  - SpawnZombies
+  - StartMoving
