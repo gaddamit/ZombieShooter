@@ -436,7 +436,7 @@ MonoBehaviour:
     events:
     - name: Dead
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: Hit
       isSystemEvent: 0
       isGlobal: 0

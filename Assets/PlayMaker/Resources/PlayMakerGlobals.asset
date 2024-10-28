@@ -98,3 +98,4 @@ MonoBehaviour:
   - StartMoving
   - PointCaptured
   - Open
+  - Dead
