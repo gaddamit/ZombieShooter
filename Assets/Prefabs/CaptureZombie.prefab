@@ -943,6 +943,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3687249539818619635, guid: 7ae2ef84af5e8455cb71a12149ac75ae, type: 3}
+      propertyPath: fsm.states.Array.data[4].actionData.fsmEventTargetParams.Array.data[0].gameObject.gameObject.showInInspector
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7489857504513186252, guid: 7ae2ef84af5e8455cb71a12149ac75ae, type: 3}
       propertyPath: m_Name
       value: CapturePoint
