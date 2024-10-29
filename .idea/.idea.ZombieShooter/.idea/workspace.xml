@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b660636c-743f-4be4-9b6f-55db5b7dd21b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ZombieShooter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ZombieShooter/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SpeedZombie.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/SpeedZombie.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/ZombieSpawnManager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/ZombieSpawnManager.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Weapon test.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Weapon test.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Zombie/BasicZombie.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Zombie/BasicZombie.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlayMaker/Editor/Resources/EditorStartupPrefs.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PlayMaker/Editor/Resources/EditorStartupPrefs.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/BasicZombie.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/BasicZombie.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/ZombieTest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/ZombieTest.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -112,6 +112,7 @@
       <workItem from="1729369937381" duration="3000" />
       <workItem from="1729477369077" duration="458000" />
       <workItem from="1729477985172" duration="205000" />
+      <workItem from="1730176069693" duration="1000" />
     </task>
     <servers />
   </component>
