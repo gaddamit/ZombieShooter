@@ -3929,6 +3929,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1900200253508795314, guid: 678c9a0369f5ae4478346a80b4987a1d, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 7036484338320204979, guid: 678c9a0369f5ae4478346a80b4987a1d, type: 3}
       propertyPath: m_Name
       value: Player
@@ -3939,6 +3943,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8472799263317390242, guid: 678c9a0369f5ae4478346a80b4987a1d, type: 3}
       propertyPath: fsm.variables.gameObjectVariables.Array.data[0].value
+      value: 
+      objectReference: {fileID: 1660787532}
+    - target: {fileID: 8472799263317390242, guid: 678c9a0369f5ae4478346a80b4987a1d, type: 3}
+      propertyPath: fsm.states.Array.data[1].actionData.fsmEventTargetParams.Array.data[0].gameObject.gameObject.value
       value: 
       objectReference: {fileID: 1660787532}
     m_RemovedComponents: []
