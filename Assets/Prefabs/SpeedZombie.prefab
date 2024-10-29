@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 2639959644210524054}
   - component: {fileID: 29999061262896601}
   - component: {fileID: 188709382186587572}
+  - component: {fileID: 4622407322450996819}
   m_Layer: 0
   m_Name: SpeedZombie
   m_TagString: Enemy
@@ -33,7 +34,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.32562566, y: -3.007183, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3214342683187248625}
@@ -80,7 +81,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9d7172a23e2f6aa4ab79a1abfb5ebc7d, type: 3}
   m_Color: {r: 0.041251317, g: 0.9716981, b: 0.52148193, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -203,16 +204,16 @@ MonoBehaviour:
     dataVersion: 2
     usedInTemplate: {fileID: 0}
     name: ZombieAI
-    startState: OnAwake 2
+    startState: State 1
     states:
     - name: OnAwake 2
       description: 
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 55.539062
-        y: 113.22656
-        width: 100
+        x: 279.53906
+        y: 161.22656
+        width: 103
         height: 32
       isBreakpoint: 0
       isSequence: 0
@@ -366,8 +367,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 262.66406
-        y: 119.60156
+        x: 486.66406
+        y: 167.60156
         width: 107
         height: 32
       isBreakpoint: 0
@@ -397,7 +398,7 @@ MonoBehaviour:
         - 
         - 
         actionEnabled: 0101010101
-        actionIsOpen: 0101010101
+        actionIsOpen: 0100010000
         actionStartIndex: 0000000003000000090000000c00000010000000
         actionHashCodes: f0eeac01756c3703786b390236f094001bcdca04
         unityObjectParams: []
@@ -571,8 +572,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 71.28906
-        y: 220.32031
+        x: 295.28906
+        y: 268.3203
         width: 100
         height: 32
       isBreakpoint: 0
@@ -662,8 +663,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 358.28906
-        y: 210.46094
+        x: 582.28906
+        y: 258.46094
         width: 100
         height: 32
       isBreakpoint: 0
@@ -907,8 +908,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 218.53906
-        y: 227.22656
+        x: 442.53906
+        y: 275.22656
         width: 116
         height: 32
       isBreakpoint: 0
@@ -1011,6 +1012,58 @@ MonoBehaviour:
         - realTime
         paramDataPos: 00000000000000000100000001000000020000000000000000000000
         paramByteDataSize: 00000000000000000000000000000000000000000000000001000000
+    - name: State 1
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 58
+        y: 168
+        width: 100
+        height: 16
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions: []
+      actionData:
+        actionNames: []
+        customNames: []
+        actionEnabled: 
+        actionIsOpen: 
+        actionStartIndex: 
+        actionHashCodes: 
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams: []
+        byteData: 
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 
+        paramName: []
+        paramDataPos: 
+        paramByteDataSize: 
     events:
     - name: Attack
       isSystemEvent: 0
@@ -1024,7 +1077,16 @@ MonoBehaviour:
     - name: StartMoving
       isSystemEvent: 0
       isGlobal: 1
-    globalTransitions: []
+    globalTransitions:
+    - fsmEvent:
+        name: StartMoving
+        isSystemEvent: 0
+        isGlobal: 1
+      toState: OnAwake 2
+      linkStyle: 0
+      linkConstraint: 0
+      linkTarget: 0
+      colorIndex: 0
     variables:
       floatVariables:
       - useVariable: 1
@@ -1926,6 +1988,27 @@ MonoBehaviour:
     handleAnimatorIK: 0
   fsmTemplate: {fileID: 0}
   eventHandlerComponentsAdded: 0
+--- !u!95 &4622407322450996819
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3557125607181480207}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0ee79f9cc5cb7ff499c4c59ef86fd50c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &4585313524926208307
 GameObject:
   m_ObjectHideFlags: 0
@@ -1942,7 +2025,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3214342683187248625
 Transform:
   m_ObjectHideFlags: 0
