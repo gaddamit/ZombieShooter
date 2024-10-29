@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 1860431741924189974}
   - component: {fileID: 8870392667927006164}
   - component: {fileID: 8576208114443429250}
+  - component: {fileID: 9074792525945355065}
+  - component: {fileID: 2405909179950198958}
   m_Layer: 0
   m_Name: BulletGrenade
   m_TagString: Bullet
@@ -20,14 +22,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2778804113027948114
-Transform:
+--- !u!224 &2778804113027948114
+RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3621924927723889370}
-  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
@@ -35,6 +36,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0.94, y: 0.8}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &1642757363458675887
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -119,7 +125,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.018171072}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -130,7 +136,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 2}
+  m_Size: {x: 1, y: 0.863011}
   m_EdgeRadius: 0
 --- !u!50 &8870392667927006164
 Rigidbody2D:
@@ -215,16 +221,18 @@ MonoBehaviour:
         - HutongGames.PlayMaker.Actions.Collision2dEvent
         - HutongGames.PlayMaker.Actions.Wait
         - HutongGames.PlayMaker.Actions.GetPosition2d
+        - HutongGames.PlayMaker.Actions.TriggerEvent
         customNames:
         - 
         - 
         - 
         - 
         - 
-        actionEnabled: 0101010101
-        actionIsOpen: 0101010101
-        actionStartIndex: 0000000011000000180000001f00000022000000
-        actionHashCodes: c1a705000ef11c050ef11c0548c0110168fde304
+        - 
+        actionEnabled: 010101010100
+        actionIsOpen: 010101010101
+        actionStartIndex: 0000000011000000180000001f0000002200000028000000
+        actionHashCodes: c1a705000ef11c050ef11c0548c0110168fde3049c512400
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 0
@@ -251,7 +259,21 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: {fileID: 0}
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 0}
         fsmOwnerDefaultParams:
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
         - ownerOption: 0
           gameObject:
             useVariable: 0
@@ -309,6 +331,12 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: Walls
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
         fsmObjectParams: []
         fsmVarParams: []
         fsmArrayParams: []
@@ -411,12 +439,13 @@ MonoBehaviour:
         - DestroyWithCollision
         - DestroyWithCollision
         - DestroyWithoutCollision
-        byteData: 0000000001000000000000000000000000000000000000000000000000000000000001
+        - 
+        byteData: 000000000100000000000000000000000000000000000000000000000000000000000100000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 07000000130000001c00000007000000130000001c000000140000000f0000002a000000160000000f0000001100000007000000170000000200000001000000070000001400000007000000110000001200000017000000130000000f0000001400000007000000110000001200000017000000130000000f0000000f000000170000000100000014000000250000000f0000000f0000000700000001000000
+        paramDataType: 07000000130000001c00000007000000130000001c000000140000000f0000002a000000160000000f0000001100000007000000170000000200000001000000070000001400000007000000110000001200000017000000130000000f0000001400000007000000110000001200000017000000130000000f0000000f000000170000000100000014000000250000000f0000000f00000007000000010000001400000007000000120000001700000013000000
         paramName:
         - fromOption
         - fromTarget
@@ -458,8 +487,13 @@ MonoBehaviour:
         - y
         - space
         - everyFrame
-        paramDataPos: 00000000000000000000000004000000010000000100000000000000000000000000000000000000010000000000000008000000000000000c0000001000000011000000010000001500000001000000000000000100000002000000020000000200000019000000020000000100000002000000030000000300000004000000030000001d000000030000000000000005000000060000001e00000022000000
-        paramByteDataSize: 04000000000000000000000004000000000000000000000000000000000000000000000000000000000000000000000004000000000000000400000001000000040000000000000004000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000400000001000000
+        - gameObject
+        - trigger
+        - collideTag
+        - sendEvent
+        - storeCollider
+        paramDataPos: 00000000000000000000000004000000010000000100000000000000000000000000000000000000010000000000000008000000000000000c0000001000000011000000010000001500000001000000000000000100000002000000020000000200000019000000020000000100000002000000030000000300000004000000030000001d000000030000000000000005000000060000001e000000220000000400000023000000020000000400000004000000
+        paramByteDataSize: 040000000000000000000000040000000000000000000000000000000000000000000000000000000000000000000000040000000000000004000000010000000400000000000000040000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000004000000010000000000000004000000000000000000000000000000
     - name: Destroy
       description: 
       colorIndex: 0
@@ -475,16 +509,23 @@ MonoBehaviour:
       transitions: []
       actionData:
         actionNames:
+        - HutongGames.PlayMaker.Actions.EnableBehaviour
         - HutongGames.PlayMaker.Actions.DestroySelf
         - HutongGames.PlayMaker.Actions.CreateObject
+        - HutongGames.PlayMaker.Actions.SetSpriteColor
+        - HutongGames.PlayMaker.Actions.GetSprite
         customNames:
         - 
         - 
-        actionEnabled: 0101
-        actionIsOpen: 0101
-        actionStartIndex: 0000000003000000
-        actionHashCodes: 230cc80060532301
-        unityObjectParams: []
+        - 
+        - 
+        - 
+        actionEnabled: 0101010100
+        actionIsOpen: 0101010101
+        actionStartIndex: 0000000005000000080000000e00000016000000
+        actionHashCodes: 3a4cad05230cc80060532301c9f57904fc838600
+        unityObjectParams:
+        - {fileID: 0}
         fsmGameObjectParams:
         - useVariable: 1
           name: HitEffect
@@ -510,15 +551,52 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: {fileID: 0}
-        fsmOwnerDefaultParams: []
+        fsmOwnerDefaultParams:
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
         fsmEventTargetParams: []
         fsmPropertyParams: []
         layoutOptionParams: []
-        fsmStringParams: []
-        fsmObjectParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: CircleCollider2D
+        fsmObjectParams:
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          typeName: UnityEngine.Object
+          value: {fileID: 0}
         fsmVarParams: []
         fsmArrayParams: []
         fsmEnumParams: []
@@ -528,9 +606,51 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
+          value: 0.25
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
           value: 0
         fsmIntParams: []
         fsmBoolParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 1
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
         - useVariable: 0
           name: 
           tooltip: 
@@ -557,17 +677,28 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: {x: 0, y: 0, z: 0}
-        fsmColorParams: []
+        fsmColorParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {r: 0, g: 0, b: 0, a: 0}
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams: []
-        byteData: 
+        byteData: 01
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 0f00000011000000110000001300000013000000130000001c0000001c00000013000000
+        paramDataType: 14000000120000000500000011000000110000000f00000011000000110000001300000013000000130000001c0000001c0000001300000014000000190000000f0000000f0000000f0000000f00000011000000010000001400000018000000
         paramName:
+        - gameObject
+        - behaviour
+        - component
+        - enable
+        - resetOnExit
         - delay
         - realTime
         - detachChildren
@@ -577,8 +708,18 @@ MonoBehaviour:
         - position
         - rotation
         - storeObject
-        paramDataPos: 000000000000000001000000000000000100000002000000000000000100000003000000
-        paramByteDataSize: 000000000000000000000000000000000000000000000000000000000000000000000000
+        - gameObject
+        - color
+        - red
+        - green
+        - blue
+        - alpha
+        - resetOnExit
+        - everyFrame
+        - gameObject
+        - sprite
+        paramDataPos: 000000000000000000000000000000000100000000000000020000000300000000000000010000000200000000000000010000000300000001000000000000000100000002000000030000000400000004000000000000000200000000000000
+        paramByteDataSize: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000
     - name: Initialize
       description: 
       colorIndex: 0
@@ -992,3 +1133,46 @@ MonoBehaviour:
     handleAnimatorIK: 0
   fsmTemplate: {fileID: 0}
   eventHandlerComponentsAdded: 0
+--- !u!58 &9074792525945355065
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3621924927723889370}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 3
+--- !u!222 &2405909179950198958
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3621924927723889370}
+  m_CullTransparentMesh: 1
