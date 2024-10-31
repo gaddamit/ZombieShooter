@@ -3869,11 +3869,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2258612155485683569, guid: 0915e26cc0e224bc4ae04f1459452e31, type: 3}
       propertyPath: fsm.states.Array.data[3].position.x
-      value: 407.71094
+      value: 415.125
       objectReference: {fileID: 0}
     - target: {fileID: 2258612155485683569, guid: 0915e26cc0e224bc4ae04f1459452e31, type: 3}
       propertyPath: fsm.states.Array.data[3].position.y
-      value: 169.42969
+      value: 156.77344
       objectReference: {fileID: 0}
     - target: {fileID: 2258612155485683569, guid: 0915e26cc0e224bc4ae04f1459452e31, type: 3}
       propertyPath: fsm.variables.intVariables.Array.data[1].value
@@ -3882,6 +3882,10 @@ PrefabInstance:
     - target: {fileID: 2258612155485683569, guid: 0915e26cc0e224bc4ae04f1459452e31, type: 3}
       propertyPath: fsm.variables.floatVariables.Array.data[0].value
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258612155485683569, guid: 0915e26cc0e224bc4ae04f1459452e31, type: 3}
+      propertyPath: fsm.states.Array.data[3].actionData.fsmFloatParams.Array.data[0].value
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 2258612155485683569, guid: 0915e26cc0e224bc4ae04f1459452e31, type: 3}
       propertyPath: fsm.states.Array.data[1].actionData.fsmEventTargetParams.Array.data[0].gameObject.gameObject.value
