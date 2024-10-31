@@ -102,7 +102,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 50
-        y: 132
+        y: 164
         width: 113
         height: 48
       isBreakpoint: 0
@@ -113,7 +113,7 @@ MonoBehaviour:
           name: PlayerIn
           isSystemEvent: 0
           isGlobal: 0
-        toState: SpawnZombies
+        toState: RoomID
         linkStyle: 0
         linkConstraint: 0
         linkTarget: 0
@@ -255,8 +255,8 @@ MonoBehaviour:
       colorIndex: 3
       position:
         serializedVersion: 2
-        x: 276.85156
-        y: 58.867188
+        x: 379.03125
+        y: 64.75
         width: 120
         height: 32
       isBreakpoint: 0
@@ -361,8 +361,8 @@ MonoBehaviour:
       colorIndex: 6
       position:
         serializedVersion: 2
-        x: 269.22656
-        y: 259.03906
+        x: 423.53906
+        y: 232.97656
         width: 114
         height: 32
       isBreakpoint: 0
@@ -467,8 +467,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 283.33594
-        y: 152.125
+        x: 423.91406
+        y: 148.64844
         width: 100
         height: 32
       isBreakpoint: 0
@@ -535,6 +535,84 @@ MonoBehaviour:
         - realTime
         paramDataPos: 000000000000000000000000
         paramByteDataSize: 000000000000000001000000
+    - name: RoomID
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 229.02344
+        y: 105.359375
+        width: 100
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: SpawnZombies
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.SetIntValue
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: 603dd905
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams:
+        - useVariable: 1
+          name: RoomID
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 1
+          name: TriggerZoneID
+          tooltip: 
+          showInInspector: 1
+          networkSync: 0
+          value: 0
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams: []
+        byteData: 00
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 100000001000000001000000
+        paramName:
+        - intVariable
+        - intValue
+        - everyFrame
+        paramDataPos: 000000000100000000000000
+        paramByteDataSize: 000000000000000001000000
     events:
     - name: PlayerIn
       isSystemEvent: 0
@@ -555,12 +633,24 @@ MonoBehaviour:
     variables:
       floatVariables:
       - useVariable: 1
+        name: 
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        value: 0
+      intVariables:
+      - useVariable: 1
+        name: 
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 0
+      - useVariable: 1
         name: TriggerZoneID
         tooltip: 
         showInInspector: 1
         networkSync: 0
         value: 0
-      intVariables: []
       boolVariables: []
       stringVariables: []
       vector2Variables: []
@@ -576,7 +666,7 @@ MonoBehaviour:
       enumVariables: []
       categories:
       - 
-      variableCategoryIDs: 00000000
+      variableCategoryIDs: 000000000000000000000000
     description: 
     docUrl: 
     showStateLabel: 0
