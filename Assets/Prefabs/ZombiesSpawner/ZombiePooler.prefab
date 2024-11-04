@@ -80,7 +80,7 @@ MonoBehaviour:
         - 
         - 
         actionEnabled: 0101
-        actionIsOpen: 0000
+        actionIsOpen: 0101
         actionStartIndex: 0000000006000000
         actionHashCodes: b1f58003b1f58003
         unityObjectParams: []
@@ -96,7 +96,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 1
           networkSync: 0
-          value: {fileID: 0}
+          value: {fileID: 3557125607181480207, guid: 391220296e0954d13abfb8ac9d590638, type: 3}
         fsmOwnerDefaultParams: []
         animationCurveParams: []
         functionCallParams: []
@@ -140,7 +140,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 1
           networkSync: 0
-          value: 0
+          value: 50
         - useVariable: 0
           name: 
           tooltip: 
