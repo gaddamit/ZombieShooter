@@ -18,7 +18,7 @@ MonoBehaviour:
   lifeTime: 1
   size: 1
   bulletSprite: {fileID: 0}
-  hitEffect: {fileID: 4021103657954561961, guid: 5c755f9bc5253ea418e919994537dcc7, type: 3}
+  hitEffect: {fileID: 6823200998282874702, guid: 8f8fe12323625f5499b2853dd2ad3e58, type: 3}
   trailEffect: {fileID: 0}
   hitSound: {fileID: 0}
   shootSound: {fileID: 0}
