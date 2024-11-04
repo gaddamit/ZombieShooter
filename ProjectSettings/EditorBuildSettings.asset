@@ -14,7 +14,22 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Weapon test.unity
     guid: 9759660fc8df7471cbd02800744211ed
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Prototype level.unity
     guid: 89e4707e88b9e4f45b6e69cb6da5618a
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 51026bcc4e6e943358bf44b066f15111
+  - enabled: 1
+    path: Assets/Scenes/Intro.unity
+    guid: 5d5548b4c4c8c48089db87477a98155b
+  - enabled: 1
+    path: Assets/Scenes/Prototype level 1.unity
+    guid: 8d1485643010c4ba78197e42af9610ec
+  - enabled: 1
+    path: Assets/Scenes/Prototype level 2.unity
+    guid: 1bb017c2efedd4f98a971b57383a0b4c
+  - enabled: 1
+    path: Assets/Scenes/End.unity
+    guid: fca2a6310c30d461da1ec56d788ae85a
   m_configObjects: {}
