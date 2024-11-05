@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletName: Shotgun Bullet
   damage: 1
-  travelTime: 10
+  travelTime: 1.5
   lifeTime: 1
   size: 1
   bulletSprite: {fileID: 0}

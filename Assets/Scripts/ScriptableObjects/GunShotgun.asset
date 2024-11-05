@@ -19,6 +19,6 @@ MonoBehaviour:
   maxAmmo: -1
   recoil: 0
   spread: 1
-  bulletPrefab: {fileID: 3621924927723889370, guid: 66b505314016f49ebb9c4a4ba5d6a359, type: 3}
+  bulletPrefab: {fileID: 3621924927723889370, guid: 031db8f90308d414ca6ce694a0505082, type: 3}
   levelSprite: {fileID: -607456373, guid: c90fc6250289148dbab5a934c720f27e, type: 3}
   uiSprite: {fileID: -2142190921, guid: b94a54c76f3a54a0493da8b244d693d4, type: 3}
