@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletName: Shotgun Bullet
   damage: 1
-  travelTime: 1
+  travelTime: 10
   lifeTime: 1
   size: 1
   bulletSprite: {fileID: 0}
-  hitEffect: {fileID: 6823200998282874702, guid: 8f8fe12323625f5499b2853dd2ad3e58, type: 3}
+  hitEffect: {fileID: 4553287630450876385, guid: 15483e51212e3d74886ea57291f4639a, type: 3}
   trailEffect: {fileID: 0}
   hitSound: {fileID: 0}
   shootSound: {fileID: 0}

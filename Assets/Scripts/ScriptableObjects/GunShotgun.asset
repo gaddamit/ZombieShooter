@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gunName: Shotgun
   description: Shotgun
-  fireRate: 0.5
-  range: 5
+  fireRate: 0.2
+  range: 40
   maxAmmo: -1
   recoil: 0
   spread: 1

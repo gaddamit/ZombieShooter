@@ -15,7 +15,7 @@ MonoBehaviour:
   gunName: Pistol
   description: Pistol
   fireRate: 0
-  range: 10
+  range: 50
   maxAmmo: -1
   recoil: 0
   spread: 0
