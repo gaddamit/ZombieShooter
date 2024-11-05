@@ -2875,13 +2875,13 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: -90
+          value: -45
         - useVariable: 0
           name: 
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 90
+          value: 45
         - useVariable: 0
           name: 
           tooltip: 
@@ -2893,7 +2893,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 4
+          value: 16
         - useVariable: 1
           name: FireRate
           tooltip: 
