@@ -38,7 +38,7 @@ public class button_press : MonoBehaviour
             Debug.Log("exit");
         }
     }
-
+    
     private void CheckCapturepointTimer()
     {
         FsmFloat timer = CapturepointFSM.FsmVariables.GetFsmFloat("CaptureTimer");

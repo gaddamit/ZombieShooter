@@ -6,10 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="b660636c-743f-4be4-9b6f-55db5b7dd21b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ZombieShooter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ZombieShooter/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Sprites/Tileset/Button_active.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Sprites/Tileset/Button_active.anim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Art/Sprites/Tileset/Jail_TilePalette.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Sprites/Tileset/Jail_TilePalette.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Art/Sprites/Tileset/button_press.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Sprites/Tileset/button_press.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlayMaker Utils/Wizards/LinkerWizard/LinkerWizardActions.unitypackage.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/PlayMaker/Editor/Resources/EditorStartupPrefs.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PlayMaker/Editor/Resources/EditorStartupPrefs.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/ZombiesSpawner/ZombiePooler.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/ZombiesSpawner/ZombiePooler.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/ZombieTest/NavMesh-NavMesh.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/ZombieTest/NavMesh-NavMesh.asset.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
