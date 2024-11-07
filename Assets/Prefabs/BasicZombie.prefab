@@ -1680,7 +1680,56 @@ MonoBehaviour:
         stringValues: []
         vector4Values: []
         objectReferences:
-        - {fileID: 3763339513307433237, guid: 52f698192938c49a0b81278f8f8ec18c, type: 3}
+        - {fileID: 241882065937011046, guid: c4ac5a814798c4d73961471c40b26da5, type: 3}
+        - {fileID: 7532088396695559001, guid: b2d47d97a619a4f49be64af973632a27, type: 3}
+        - {fileID: 241882065937011046, guid: 95059717c6f1d46349080f57d36fa669, type: 3}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
       enumVariables: []
       categories:
       - 
@@ -1702,7 +1751,7 @@ MonoBehaviour:
     ResetVariablesOnEnable: 0
     EnableDebugFlow: 0
     EnableBreakpoints: 1
-    editorFlags: 244
+    editorFlags: 245
     activeStateName: 
     mouseEvents: 0
     handleLevelLoaded: 0
