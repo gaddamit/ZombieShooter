@@ -69,7 +69,7 @@ MonoBehaviour:
       tooltip: 
       showInInspector: 0
       networkSync: 0
-      value: 1
+      value: 0
     stringVariables: []
     vector2Variables:
     - useVariable: 1
@@ -118,3 +118,4 @@ MonoBehaviour:
   - Open
   - Dead
   - StopSpawning
+  - SFX
