@@ -16,7 +16,7 @@ MonoBehaviour:
   description: Pistol
   fireRate: 0.25
   range: 10
-  maxAmmo: 30
+  maxAmmo: -1
   recoil: 0
   spread: 0
   bulletPrefab: {fileID: 3621924927723889370, guid: 66b505314016f49ebb9c4a4ba5d6a359, type: 3}
