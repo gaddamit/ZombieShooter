@@ -935,17 +935,15 @@ MonoBehaviour:
         - HutongGames.PlayMaker.Actions.Wait
         - HutongGames.PlayMaker.Actions.Collision2dEvent
         - HutongGames.PlayMaker.Actions.SetAnimatorSpeed
-        - HutongGames.PlayMaker.Actions.ParticleSystemPlay
         customNames:
         - 
         - 
         - 
         - 
-        - 
-        actionEnabled: 0101010100
-        actionIsOpen: 0101000101
-        actionStartIndex: 0000000002000000050000000c0000000f000000
-        actionHashCodes: 9bd6f80148c011010ef11c0532d5940273b31903
+        actionEnabled: 01010101
+        actionIsOpen: 01010101
+        actionStartIndex: 0000000002000000050000000c000000
+        actionHashCodes: 9bd6f80148c011010ef11c0532d59402
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
@@ -979,14 +977,6 @@ MonoBehaviour:
             showInInspector: 0
             networkSync: 0
             value: {fileID: 0}
-        - ownerOption: 1
-          gameObject:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {fileID: 6726123444083792498}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -1028,33 +1018,9 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 3
+          value: 4
         fsmIntParams: []
         fsmBoolParams:
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 0
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 1
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 0
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 0
         - useVariable: 0
           name: 
           tooltip: 
@@ -1074,7 +1040,7 @@ MonoBehaviour:
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 14000000120000000f00000017000000010000001400000007000000110000001200000017000000130000000f000000140000000f000000010000001400000011000000110000001100000011000000
+        paramDataType: 14000000120000000f00000017000000010000001400000007000000110000001200000017000000130000000f000000140000000f00000001000000
         paramName:
         - gameObject
         - trigger
@@ -1091,13 +1057,8 @@ MonoBehaviour:
         - gameObject
         - speed
         - everyFrame
-        - gameObject
-        - withChildren
-        - cacheChildren
-        - stopOnExit
-        - destroyOnFinish
-        paramDataPos: 0000000000000000000000000000000000000000010000000100000000000000010000000100000000000000010000000200000002000000050000000300000001000000020000000300000004000000
-        paramByteDataSize: 0000000000000000000000000000000001000000000000000400000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000
+        paramDataPos: 000000000000000000000000000000000000000001000000010000000000000001000000010000000000000001000000020000000200000005000000
+        paramByteDataSize: 000000000000000000000000000000000100000000000000040000000000000000000000000000000000000000000000000000000000000001000000
     events:
     - name: Attack
       isSystemEvent: 0
@@ -1116,7 +1077,7 @@ MonoBehaviour:
         tooltip: 
         showInInspector: 0
         networkSync: 0
-        value: 3
+        value: 4
       intVariables: []
       boolVariables:
       - useVariable: 1
@@ -1157,7 +1118,7 @@ MonoBehaviour:
     ResetVariablesOnEnable: 0
     EnableDebugFlow: 0
     EnableBreakpoints: 1
-    editorFlags: 225
+    editorFlags: 501
     activeStateName: 
     mouseEvents: 0
     handleLevelLoaded: 0
@@ -1260,13 +1221,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2088703766567249052}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0.38268343, w: 0.92387956}
+  m_LocalRotation: {x: 0, y: 0, z: -0.3420201, w: 0.9396927}
   m_LocalPosition: {x: 0.668, y: 0.005, z: 0}
-  m_LocalScale: {x: -6, y: -6, z: 1}
+  m_LocalScale: {x: -4, y: -4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7547742173209330617}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -45}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -40}
 --- !u!212 &2922651340899426401
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1374,7 +1335,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: -0.07, y: -0.08}
   serializedVersion: 2
-  m_Radius: 0.05
+  m_Radius: 0.1
 --- !u!114 &1702807957272727781
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1456,6 +1417,22 @@ PrefabInstance:
       propertyPath: looping
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6710139492206580334, guid: 95b8d3d65b5d7f1409c4ed1723887826, type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6710139492206580334, guid: 95b8d3d65b5d7f1409c4ed1723887826, type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6710139492206580335, guid: 95b8d3d65b5d7f1409c4ed1723887826, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 4300000, guid: a0ee99ac161e4ba45b09ccd7072aed4b, type: 2}
+    - target: {fileID: 6710139492206580335, guid: 95b8d3d65b5d7f1409c4ed1723887826, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1618
+      objectReference: {fileID: 0}
     - target: {fileID: 6710139492206580335, guid: 95b8d3d65b5d7f1409c4ed1723887826, type: 3}
       propertyPath: m_Materials.Array.size
       value: 1
@@ -1465,11 +1442,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 95b8d3d65b5d7f1409c4ed1723887826, type: 3}
---- !u!1 &6726123444083792498 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6710139492206580332, guid: 95b8d3d65b5d7f1409c4ed1723887826, type: 3}
-  m_PrefabInstance: {fileID: 20488240385591326}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6726123444083792503 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6710139492206580329, guid: 95b8d3d65b5d7f1409c4ed1723887826, type: 3}

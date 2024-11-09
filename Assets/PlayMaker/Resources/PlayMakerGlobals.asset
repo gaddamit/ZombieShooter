@@ -33,6 +33,12 @@ MonoBehaviour:
       showInInspector: 0
       networkSync: 0
       value: 0
+    - useVariable: 1
+      name: RoomID
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
     boolVariables:
     - useVariable: 1
       name: InUse
@@ -58,10 +64,22 @@ MonoBehaviour:
       showInInspector: 0
       networkSync: 0
       value: 0
+    - useVariable: 1
+      name: FunMode
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
     stringVariables: []
     vector2Variables:
     - useVariable: 1
       name: TargetPosition
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: {x: 0, y: 0}
+    - useVariable: 1
+      name: walking
       tooltip: 
       showInInspector: 0
       networkSync: 0
@@ -91,7 +109,7 @@ MonoBehaviour:
     enumVariables: []
     categories:
     - 
-    variableCategoryIDs: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    variableCategoryIDs: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   events:
   - StartSpawning
   - SpawnZombies
@@ -99,3 +117,5 @@ MonoBehaviour:
   - PointCaptured
   - Open
   - Dead
+  - StopSpawning
+  - SFX

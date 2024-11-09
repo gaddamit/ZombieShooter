@@ -15,7 +15,7 @@ MonoBehaviour:
   bulletName: Grenade Bullet
   damage: 1
   travelTime: 0.5
-  lifeTime: 0.5
+  lifeTime: 10
   size: 1
   bulletSprite: {fileID: 769648784, guid: c90fc6250289148dbab5a934c720f27e, type: 3}
   hitEffect: {fileID: 725748389856807714, guid: 4bda94453d2ca7444a0fff05b2d425f5, type: 3}
