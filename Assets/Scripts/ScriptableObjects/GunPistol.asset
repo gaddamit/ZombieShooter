@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gunName: Pistol
   description: Pistol
-  fireRate: 0.25
-  range: 10
+  fireRate: 0.15
+  range: 50
   maxAmmo: -1
   recoil: 0
   spread: 0
