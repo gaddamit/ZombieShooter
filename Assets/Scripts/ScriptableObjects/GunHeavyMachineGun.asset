@@ -15,10 +15,10 @@ MonoBehaviour:
   gunName: HeavyMachineGun
   description: Heavy Machine Gun
   fireRate: 0.1
-  range: 10
+  range: 50
   maxAmmo: 100
   recoil: 0
   spread: 0
   bulletPrefab: {fileID: 3621924927723889370, guid: a434dddcf50f24edeaf58c01e0ac1bc2, type: 3}
   levelSprite: {fileID: 663604802, guid: c90fc6250289148dbab5a934c720f27e, type: 3}
-  uiSprite: {fileID: 1052689064, guid: b94a54c76f3a54a0493da8b244d693d4, type: 3}
+  uiSprite: {fileID: 663604802, guid: c90fc6250289148dbab5a934c720f27e, type: 3}

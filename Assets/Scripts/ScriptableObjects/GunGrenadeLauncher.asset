@@ -21,4 +21,4 @@ MonoBehaviour:
   spread: 0
   bulletPrefab: {fileID: 3621924927723889370, guid: 906fe73b73d6e4df2bd93fd5627c6cf3, type: 3}
   levelSprite: {fileID: 759220915, guid: c90fc6250289148dbab5a934c720f27e, type: 3}
-  uiSprite: {fileID: -2009310559, guid: b94a54c76f3a54a0493da8b244d693d4, type: 3}
+  uiSprite: {fileID: 759220915, guid: c90fc6250289148dbab5a934c720f27e, type: 3}
