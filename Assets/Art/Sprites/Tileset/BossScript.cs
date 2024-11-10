@@ -11,7 +11,7 @@ public class BossScript : MonoBehaviour
     [SerializeField] private GameObject button_progress_2;
     [SerializeField] private float shield_button_timer = 15.0f;
     [SerializeField] private float shield_down_duration = 25.0f;
-    private float boss_health = 100;
+    protected float boss_health = 100;
 
     private float button1_progress = 0;
     private float button2_progress = 0;
@@ -39,6 +39,12 @@ public class BossScript : MonoBehaviour
 
     private void Update()
     {
+        if (boss_health <= 0)
+        {
+            //play a death coroutine
+        }
+
+
         if (button_progress_1.activeSelf == true & button_progress_2.activeSelf == true & !shield_down_coroutine_active)
         {
             Debug.Log("both active");
@@ -109,6 +115,10 @@ public class BossScript : MonoBehaviour
         shield_down_coroutine_active = false;
 
     }
-
+    public void Hit()
+    {
+        boss_health = boss_health - 1;
+        Debug.Log(boss_health);
+    }
 }
 
