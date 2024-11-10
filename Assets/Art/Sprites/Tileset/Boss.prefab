@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4806682722768694760}
   m_Layer: 0
   m_Name: Boss_Shield
-  m_TagString: Untagged
+  m_TagString: Walls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -129,6 +129,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5184521436329036895}
+  - component: {fileID: 8853153720102676538}
   m_Layer: 0
   m_Name: Boss
   m_TagString: Untagged
@@ -155,6 +156,34 @@ Transform:
   - {fileID: 3548952705972302998}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8853153720102676538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2350793452210684939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61fba2e25f3ef8b4197059bd30d68402, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  head_animator: {fileID: 2818218027968483874}
+  hand_L_animator: {fileID: 819975682964213896}
+  hand_R_animator: {fileID: 2818218027968483874}
+  hand_L: {fileID: 5987941995213439664}
+  hand_R: {fileID: 6320693474080648189}
+  button1: {fileID: 0}
+  button2: {fileID: 0}
+  shield: {fileID: 766129859744479658}
+  button_progress_1: {fileID: 0}
+  button_progress_2: {fileID: 0}
+  shield_button_timer: 1
+  shield_down_duration: 10
+  boss_health: 1
+  death_explosion_radius: 4
+  death_explosion_rate: 6
+  explosion_prefab: {fileID: 2433282508537954060, guid: 3ef3ae421f71c5c4e97fe12dc2fc6312, type: 3}
 --- !u!1 &5327399385591215571
 GameObject:
   m_ObjectHideFlags: 0
@@ -166,10 +195,11 @@ GameObject:
   - component: {fileID: 8120946100525098493}
   - component: {fileID: 1547817580461915762}
   - component: {fileID: 8032745449846427890}
+  - component: {fileID: 6702223462463059377}
   - component: {fileID: 2818218027968483874}
   m_Layer: 0
   m_Name: Boss_Head
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -284,8 +314,21 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.37, y: 0.4}
+  m_Size: {x: 0.22, y: 0.22}
   m_EdgeRadius: 0
+--- !u!114 &6702223462463059377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5327399385591215571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d33d6c93ce3ed8848b9cc2c88dfea605, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parent_script: {fileID: 8853153720102676538}
 --- !u!95 &2818218027968483874
 Animator:
   serializedVersion: 5
