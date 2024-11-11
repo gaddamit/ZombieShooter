@@ -5,10 +5,8 @@ using UnityEngine;
 public class BossScript : MonoBehaviour
 {
     [SerializeField] private Animator head_animator;
-    [SerializeField] private Animator hand_L_animator;
-    [SerializeField] private Animator hand_R_animator;
-    [SerializeField] private GameObject hand_L;
-    [SerializeField] private GameObject hand_R;
+    [SerializeField] private BossHandBombToss hand_L;
+    [SerializeField] private BossHandBombToss hand_R;
     [SerializeField] private BossButton button1;
     [SerializeField] private BossButton button2;
     [SerializeField] private GameObject shield;
@@ -163,6 +161,8 @@ public class BossScript : MonoBehaviour
     private IEnumerator DeathState()
     {
         head_animator.Play("die");
+        hand_L.IsDying();
+        hand_R.IsDying();
         float explode_time = 6f;
         float x = 0;
         keep_exploding = true;

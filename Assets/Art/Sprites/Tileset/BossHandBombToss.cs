@@ -5,33 +5,64 @@ using UnityEngine;
 public class BossHandBombToss : MonoBehaviour
 {
     [SerializeField] GameObject bomb;
-    [SerializeField] float throw_force = 15f;
-    [SerializeField] float targetting_radius = 12f;
-    [SerializeField] float throw_timer;
-    [SerializeField] float explosion_force = 3f;
-    [SerializeField] float explosion_radius = 3f;
-    [SerializeField] float bomb_duration_minimum = 1f;
-    [SerializeField] float bomb_duration_maximum = 3f;
+    [SerializeField] float throw_force = 5f;
+    [SerializeField] float targetting_radius = 1.5f;
+    [SerializeField] float throw_timer = 5f;
     private GameObject player;
     public bool active = true;
+    private float next_spawn_time;
+    private Animator anim;
+    private float throw_anim_timer = .65f;
+    private float throw_anim_timer_end = .3f;
+    private bool is_throwing = false;
+    private bool is_dying = false;
+
+    public void IsDying()
+    {
+        is_dying = true;
+    }
 
     void Start()
     {
+        anim = GetComponent<Animator>();
+        anim.Play("hand idle");
         player = GameObject.FindWithTag("Player");
+        Debug.Log(player);
+        next_spawn_time = Time.time + throw_timer;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (is_dying)
+        {
+            anim.Play("hand die");
+        }
+        else if (Time.time >= next_spawn_time & !is_throwing)
+        {
+            is_throwing = true;
+            StartCoroutine(ThrowAnimation());
+            next_spawn_time = Time.time + throw_timer;
+        }
+    }
+
+    IEnumerator ThrowAnimation()
+    {
+        anim.Play("hand attack");
+        yield return new WaitForSeconds(throw_anim_timer);
+        SpawnBomb();
+        yield return new WaitForSeconds(throw_anim_timer_end);
+        is_throwing = false;
+        anim.Play("hand idle");
     }
 
     void SpawnBomb()
     {
         if (player != null & bomb != null)
         {
+            Debug.Log("spawning a bomb");
             //where is the player
-            Vector2 player_position = player.transform.position;
+            Vector2 player_position = player.transform.localPosition;
             //create
             GameObject projectile = Instantiate(bomb, transform.position, Quaternion.identity);
             //find the direction to our target with a randomized offset
@@ -47,7 +78,8 @@ public class BossHandBombToss : MonoBehaviour
             BossBomb bomb_script = projectile.GetComponent<BossBomb>();
             if (bomb_script != null)
             {
-                bomb_script.SetExplosionDelay(Random.Range(bomb_duration_minimum, bomb_duration_maximum));
+                Debug.Log("setting bomb target");
+                bomb_script.SetExplosionTarget(target_positon);
             }
         }
     }

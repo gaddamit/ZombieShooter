@@ -169,20 +169,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   head_animator: {fileID: 2818218027968483874}
-  hand_L_animator: {fileID: 819975682964213896}
-  hand_R_animator: {fileID: 2818218027968483874}
-  hand_L: {fileID: 5987941995213439664}
-  hand_R: {fileID: 6320693474080648189}
+  hand_L: {fileID: 9107334734207645655}
+  hand_R: {fileID: 899142434540376407}
   button1: {fileID: 0}
   button2: {fileID: 0}
   shield: {fileID: 766129859744479658}
   button_progress_1: {fileID: 0}
   button_progress_2: {fileID: 0}
-  shield_button_timer: 1
+  shield_button_timer: 5
   shield_down_duration: 10
   boss_health: 1
   death_explosion_radius: 4
-  death_explosion_rate: 6
+  death_explosion_rate: 16
   explosion_prefab: {fileID: 2433282508537954060, guid: 3ef3ae421f71c5c4e97fe12dc2fc6312, type: 3}
 --- !u!1 &5327399385591215571
 GameObject:
@@ -362,6 +360,7 @@ GameObject:
   - component: {fileID: 8355496701819363831}
   - component: {fileID: 9067978285551240353}
   - component: {fileID: 819975682964213896}
+  - component: {fileID: 9107334734207645655}
   m_Layer: 0
   m_Name: Boss_Hand_L
   m_TagString: Untagged
@@ -502,6 +501,23 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &9107334734207645655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5987941995213439664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b081cd7f4e49b64d89dd54626642427, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bomb: {fileID: 5875772171751499727, guid: 726fc19d7c5fc43428b9b1f3d2fe2256, type: 3}
+  throw_force: 5
+  targetting_radius: 1
+  throw_timer: 5
+  active: 1
 --- !u!1 &6320693474080648189
 GameObject:
   m_ObjectHideFlags: 0
@@ -514,6 +530,7 @@ GameObject:
   - component: {fileID: 6977262484402000807}
   - component: {fileID: 8956564442158803480}
   - component: {fileID: 4569593056523613453}
+  - component: {fileID: 899142434540376407}
   m_Layer: 0
   m_Name: Boss_Hand_R
   m_TagString: Untagged
@@ -654,3 +671,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &899142434540376407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6320693474080648189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b081cd7f4e49b64d89dd54626642427, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bomb: {fileID: 5875772171751499727, guid: 726fc19d7c5fc43428b9b1f3d2fe2256, type: 3}
+  throw_force: 5
+  targetting_radius: 1
+  throw_timer: 5
+  active: 1

@@ -5,15 +5,22 @@ using UnityEngine;
 public class BossBomb : MonoBehaviour
 {
     //we could have this kill the player or we could have it push the player away - I think just pushing them away plays into the core gameplay better
-    public float explosion_radius = 5f;
+    public float explosion_radius = 10f;
     public float explosion_force = 50f;
     [SerializeField] private GameObject explosion;
-    private float explosion_delay;
+    private Vector2 explode_here;
 
-    public void SetExplosionDelay(float delay)
+    public void SetExplosionTarget(Vector2 target)
     {
-        explosion_delay = delay;
-        Invoke("Explode", explosion_delay);
+        explode_here = target;
+    }
+
+    private void FixedUpdate()
+    {
+        if (Vector2.Distance(transform.position, explode_here) <= .2)
+        {
+            Explode();
+        }
     }
 
     void Explode()
@@ -25,11 +32,15 @@ public class BossBomb : MonoBehaviour
             Rigidbody2D rb = hit.GetComponent<Rigidbody2D>();
             if (rb != null)
             {
+                Debug.Log(rb);
                 Vector2 explosion_pos = transform.position;
                 Vector2 hit_pos = hit.transform.position;
                 Vector2 explosion_dir = (hit_pos - explosion_pos).normalized;
                 float explosion_distance = Vector2.Distance(explosion_pos, hit_pos);
-
+                if (explosion_distance == 0)
+                {
+                    explosion_distance = .1f;
+                }
                 // Apply force away from the explosion center
                 rb.AddForce(explosion_dir * explosion_force / explosion_distance, ForceMode2D.Impulse);
             }
@@ -37,6 +48,7 @@ public class BossBomb : MonoBehaviour
         }
 
         // Destroy the projectile when we're done
+        GameObject explosion_instance = Instantiate(explosion, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
 }
