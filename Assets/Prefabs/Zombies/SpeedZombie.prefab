@@ -119,7 +119,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!58 &7908135540059135874
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -392,16 +392,18 @@ MonoBehaviour:
         - HutongGames.PlayMaker.Actions.FindGameObject
         - HutongGames.PlayMaker.Actions.GetDistance
         - HutongGames.PlayMaker.Actions.FloatCompare
+        - HutongGames.PlayMaker.Actions.FaceTarget
         customNames:
         - 
         - 
         - 
         - 
         - 
-        actionEnabled: 0101010101
-        actionIsOpen: 0100010000
-        actionStartIndex: 0000000003000000090000000c00000010000000
-        actionHashCodes: f0eeac01756c3703786b390236f094001bcdca04
+        - 
+        actionEnabled: 010001010101
+        actionIsOpen: 010001000001
+        actionStartIndex: 0000000003000000090000000c0000001000000017000000
+        actionHashCodes: f0eeac01756c3703786b390236f094001bcdca0438547703
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
@@ -428,7 +430,21 @@ MonoBehaviour:
           showInInspector: 1
           networkSync: 0
           value: {fileID: 7036484338320204979, guid: 678c9a0369f5ae4478346a80b4987a1d, type: 3}
+        - useVariable: 1
+          name: PlayerLocation
+          tooltip: 
+          showInInspector: 1
+          networkSync: 0
+          value: {fileID: 7036484338320204979, guid: 678c9a0369f5ae4478346a80b4987a1d, type: 3}
         fsmOwnerDefaultParams:
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
         - ownerOption: 0
           gameObject:
             useVariable: 0
@@ -521,7 +537,13 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 1
-        fsmVector2Params: []
+        fsmVector2Params:
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {x: 0, y: 0}
         fsmVector3Params: []
         fsmColorParams:
         - useVariable: 0
@@ -536,12 +558,12 @@ MonoBehaviour:
         - Attack
         - Attack
         - 
-        byteData: 010101
+        byteData: 01010101
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 14000000130000000f00000014000000130000000f00000011000000190000000100000012000000120000001300000014000000130000000f000000010000000f0000000f0000000f00000017000000170000001700000001000000
+        paramDataType: 14000000130000000f00000014000000130000000f00000011000000190000000100000012000000120000001300000014000000130000000f000000010000000f0000000f0000000f0000001700000017000000170000000100000014000000130000002500000001000000
         paramName:
         - gameObject
         - destination
@@ -566,8 +588,12 @@ MonoBehaviour:
         - lessThan
         - greaterThan
         - everyFrame
-        paramDataPos: 0000000000000000000000000100000001000000010000000000000000000000000000000000000001000000020000000200000003000000020000000100000003000000040000000500000000000000010000000200000002000000
-        paramByteDataSize: 0000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000001000000
+        - gameObject
+        - target
+        - position
+        - everyFrame
+        paramDataPos: 000000000000000000000000010000000100000001000000000000000000000000000000000000000100000002000000020000000300000002000000010000000300000004000000050000000000000001000000020000000200000003000000040000000000000003000000
+        paramByteDataSize: 000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000100000000000000000000000000000001000000
     - name: Wait
       description: 
       colorIndex: 0
