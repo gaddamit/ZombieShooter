@@ -11,9 +11,10 @@ namespace HutongGames.PlayMaker.Actions
 		[RequiredField]
         [Tooltip("The game object to examine.")]
         public FsmOwnerDefault gameObject;
-		[RequiredField]
 		[Tooltip("Target GameObject.")]
         public FsmGameObject target;
+		[Tooltip("Target Position.")]
+        public FsmVector2 position;
 		[Tooltip("Repeat every frame.")]
         public bool everyFrame;
 		
@@ -25,7 +26,8 @@ namespace HutongGames.PlayMaker.Actions
 		{
 			gameObject = null;
 			target = null;
-			everyFrame = true;
+			position = new FsmVector2 { UseVariable = true };
+			everyFrame = false;
 		}
 
         public override void Awake()
@@ -59,13 +61,14 @@ namespace HutongGames.PlayMaker.Actions
 		private void DoFaceTarget()
 		{
 			var go = Fsm.GetOwnerDefaultTarget(gameObject);
-		    if (go == null || target.Value == null)
+		    if (go == null)
 		    {
 		        return;
 		    }
 
 			vector_2d = go.transform.position;
-			vector_2d_target = target.Value.transform.position;
+			vector_2d_target = target.Value == null ? position.Value : target.Value.transform.position;
+			
 			vector_2d_direction = vector_2d_target - vector_2d;
 			
 			Vector3 scale = vector_3d_scale;
