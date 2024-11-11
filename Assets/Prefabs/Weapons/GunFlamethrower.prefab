@@ -1112,7 +1112,7 @@ MonoBehaviour:
         showInInspector: 1
         networkSync: 0
         typeName: UnityEngine.Sprite
-        value: {fileID: 0}
+        value: {fileID: -1035832423, guid: c90fc6250289148dbab5a934c720f27e, type: 3}
       - useVariable: 1
         name: BulletPrefab
         tooltip: 

@@ -20,5 +20,5 @@ MonoBehaviour:
   recoil: 0
   spread: 0
   bulletPrefab: {fileID: 3621924927723889370, guid: e0699daebb2dc49908fff905442f1c42, type: 3}
-  levelSprite: {fileID: 769648784, guid: c90fc6250289148dbab5a934c720f27e, type: 3}
-  uiSprite: {fileID: -519886269, guid: b94a54c76f3a54a0493da8b244d693d4, type: 3}
+  levelSprite: {fileID: -1035832423, guid: c90fc6250289148dbab5a934c720f27e, type: 3}
+  uiSprite: {fileID: -1035832423, guid: c90fc6250289148dbab5a934c720f27e, type: 3}
