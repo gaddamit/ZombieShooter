@@ -28,8 +28,14 @@ EditorBuildSettings:
     guid: 8d1485643010c4ba78197e42af9610ec
   - enabled: 1
     path: Assets/Scenes/Prototype level 2.unity
-    guid: 1bb017c2efedd4f98a971b57383a0b4c
+    guid: 39cbd86cf9fb1437d916cc249d31f430
   - enabled: 1
     path: Assets/Scenes/End.unity
     guid: fca2a6310c30d461da1ec56d788ae85a
+  - enabled: 1
+    path: Assets/Scenes/Tileset/Level 1.unity
+    guid: e162942c64d944a5282bba73ccdecf29
+  - enabled: 1
+    path: Assets/Scenes/Tileset/Level 2.unity
+    guid: a078f385b2b5a4fa6a8a7af2069a8ff3
   m_configObjects: {}
