@@ -5,6 +5,7 @@ using UnityEngine;
 public class BossScript : MonoBehaviour
 {
     [SerializeField] private Animator head_animator;
+    [SerializeField] private Collider2D head_hitbox;
     [SerializeField] private BossHandBombToss hand_L;
     [SerializeField] private BossHandBombToss hand_R;
     [SerializeField] private BossButton button1;
@@ -19,6 +20,7 @@ public class BossScript : MonoBehaviour
     [SerializeField] private float death_explosion_rate = 6f;
     [SerializeField] private GameObject explosion_prefab;
 
+
     private float button1_progress = 0;
     private float button2_progress = 0;
     private bool is_shield_active = true;
@@ -31,7 +33,9 @@ public class BossScript : MonoBehaviour
     {
         if (shield != null)
             shield.SetActive(true);
-        //shield always starts active
+        if (head_hitbox != null)
+        head_hitbox.enabled = false;
+        //shield always starts active - deactivating the head hitbox so that shotgun doesn't go through it
         if (button_progress_1 != null)
         {
             button_progress_1.SetActive(false);
@@ -49,7 +53,7 @@ public class BossScript : MonoBehaviour
     {
         if (boss_health <= 0)
         {
-
+            head_hitbox.enabled = false;
         }
 
         else
@@ -60,6 +64,7 @@ public class BossScript : MonoBehaviour
             {
                 Debug.Log("both active");
                 is_shield_active = false;
+                head_hitbox.enabled = true;
                 shield.SetActive(false);
                 shield_down_coroutine_active = true;
                 StartCoroutine(ShieldDeactivated());
@@ -124,6 +129,7 @@ public class BossScript : MonoBehaviour
         button_progress_2.SetActive(false);
         shield_down_timer = 0f;
         is_shield_active = true;
+        head_hitbox.enabled = false;
         shield_down_coroutine_active = false;
 
     }
@@ -132,6 +138,7 @@ public class BossScript : MonoBehaviour
         boss_health = boss_health - 1;
         if (boss_health >0)
         {
+            head_hitbox.enabled = false;
             Debug.Log(boss_health);
             StartCoroutine(PainState());
         }

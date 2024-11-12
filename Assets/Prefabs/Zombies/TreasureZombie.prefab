@@ -1996,7 +1996,11 @@ MonoBehaviour:
         stringValues: []
         vector4Values: []
         objectReferences:
-        - {fileID: 3763339513307433237, guid: 52f698192938c49a0b81278f8f8ec18c, type: 3}
+        - {fileID: 6799398336472871031, guid: f3fe4bf10094944f8be65242b50905ac, type: 3}
+        - {fileID: 241882065937011046, guid: 655a0733e3ee34269a2e0711e855ff9d, type: 3}
+        - {fileID: 6799398336472871031, guid: b7f33f940c2924e33b8222f45316030c, type: 3}
+        - {fileID: 241882065937011046, guid: 4be548ec9071a493ab91c8e3810c0aa2, type: 3}
+        - {fileID: 7532088396695559001, guid: b2d47d97a619a4f49be64af973632a27, type: 3}
       enumVariables: []
       categories:
       - 
