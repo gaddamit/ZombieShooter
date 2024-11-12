@@ -76,13 +76,17 @@ MonoBehaviour:
         actionNames:
         - HutongGames.PlayMaker.Actions.PoolerPool
         - HutongGames.PlayMaker.Actions.PoolerPool
+        - HutongGames.PlayMaker.Actions.PoolerPool
+        - HutongGames.PlayMaker.Actions.PoolerPool
         customNames:
         - 
         - 
-        actionEnabled: 0101
-        actionIsOpen: 0101
-        actionStartIndex: 0000000006000000
-        actionHashCodes: b1f58003b1f58003
+        - 
+        - 
+        actionEnabled: 01010101
+        actionIsOpen: 01010101
+        actionStartIndex: 00000000060000000c00000012000000
+        actionHashCodes: b1f58003b1f58003b1f58003b1f58003
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
@@ -97,6 +101,18 @@ MonoBehaviour:
           showInInspector: 1
           networkSync: 0
           value: {fileID: 3557125607181480207, guid: 391220296e0954d13abfb8ac9d590638, type: 3}
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 1393830368268018233, guid: 516fc78a6df194b86b675c435b70637c, type: 3}
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 1393830368268018233, guid: 97dcbaed3a58c416080e21fd6a3a0112, type: 3}
         fsmOwnerDefaultParams: []
         animationCurveParams: []
         functionCallParams: []
@@ -117,6 +133,18 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: Speed
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
         fsmObjectParams: []
         fsmVarParams: []
         fsmArrayParams: []
@@ -147,7 +175,55 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 20
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 20
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
         fsmBoolParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
         - useVariable: 0
           name: 
           tooltip: 
@@ -183,7 +259,7 @@ MonoBehaviour:
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 130000001200000010000000110000001000000011000000130000001200000010000000110000001000000011000000
+        paramDataType: 130000001200000010000000110000001000000011000000130000001200000010000000110000001000000011000000130000001200000010000000110000001000000011000000130000001200000010000000110000001000000011000000
         paramName:
         - PrefabToPool
         - NameOfThePool
@@ -197,8 +273,20 @@ MonoBehaviour:
         - CanGrow
         - MaxPooledObjects
         - recycle
-        paramDataPos: 000000000000000000000000000000000100000001000000010000000100000002000000020000000300000003000000
-        paramByteDataSize: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+        - PrefabToPool
+        - NameOfThePool
+        - InitiallyPooledObjects
+        - CanGrow
+        - MaxPooledObjects
+        - recycle
+        - PrefabToPool
+        - NameOfThePool
+        - InitiallyPooledObjects
+        - CanGrow
+        - MaxPooledObjects
+        - recycle
+        paramDataPos: 000000000000000000000000000000000100000001000000010000000100000002000000020000000300000003000000020000000200000004000000040000000500000005000000030000000300000006000000060000000700000007000000
+        paramByteDataSize: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
     - name: Ready
       description: 
       colorIndex: 0
