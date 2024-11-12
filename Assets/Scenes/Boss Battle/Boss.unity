@@ -3870,9 +3870,9 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0
-    width: 1
-    height: 1
+    y: 0.02895323
+    width: 0.99999994
+    height: 0.94209355
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -44706,6 +44706,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1168367497 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7606334023033618823, guid: d74f4f20999da4838a9fda6361238a56, type: 3}
+  m_PrefabInstance: {fileID: 1930903504}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1169606749
 GameObject:
   m_ObjectHideFlags: 0
@@ -79763,6 +79768,71 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &1930903504
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1176029461159136292, guid: d74f4f20999da4838a9fda6361238a56, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5061959798364193831, guid: d74f4f20999da4838a9fda6361238a56, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -19.84
+      objectReference: {fileID: 0}
+    - target: {fileID: 5061959798364193831, guid: d74f4f20999da4838a9fda6361238a56, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 15.040001
+      objectReference: {fileID: 0}
+    - target: {fileID: 5061959798364193831, guid: d74f4f20999da4838a9fda6361238a56, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5061959798364193831, guid: d74f4f20999da4838a9fda6361238a56, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5061959798364193831, guid: d74f4f20999da4838a9fda6361238a56, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5061959798364193831, guid: d74f4f20999da4838a9fda6361238a56, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5061959798364193831, guid: d74f4f20999da4838a9fda6361238a56, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5061959798364193831, guid: d74f4f20999da4838a9fda6361238a56, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5061959798364193831, guid: d74f4f20999da4838a9fda6361238a56, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5061959798364193831, guid: d74f4f20999da4838a9fda6361238a56, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6791483497876662993, guid: d74f4f20999da4838a9fda6361238a56, type: 3}
+      propertyPath: fsm.variables.stringVariables.Array.data[0].value
+      value: End
+      objectReference: {fileID: 0}
+    - target: {fileID: 7606334023033618823, guid: d74f4f20999da4838a9fda6361238a56, type: 3}
+      propertyPath: m_Name
+      value: LevelLoader
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d74f4f20999da4838a9fda6361238a56, type: 3}
 --- !u!1 &1933931997
 GameObject:
   m_ObjectHideFlags: 0
@@ -90917,12 +90987,16 @@ PrefabInstance:
       objectReference: {fileID: 5740281677909476260}
     - target: {fileID: 8853153720102676538, guid: da8a59773956d2f4c8f2affba5c1b61a, type: 3}
       propertyPath: boss_health
-      value: 75
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 8853153720102676538, guid: da8a59773956d2f4c8f2affba5c1b61a, type: 3}
       propertyPath: head_hitbox
       value: 
       objectReference: {fileID: 866153072}
+    - target: {fileID: 8853153720102676538, guid: da8a59773956d2f4c8f2affba5c1b61a, type: 3}
+      propertyPath: level_loader
+      value: 
+      objectReference: {fileID: 1168367497}
     - target: {fileID: 8853153720102676538, guid: da8a59773956d2f4c8f2affba5c1b61a, type: 3}
       propertyPath: button_progress_1
       value: 
@@ -90933,6 +91007,14 @@ PrefabInstance:
       objectReference: {fileID: 963149050}
     - target: {fileID: 8853153720102676538, guid: da8a59773956d2f4c8f2affba5c1b61a, type: 3}
       propertyPath: shield_button_timer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8853153720102676538, guid: da8a59773956d2f4c8f2affba5c1b61a, type: 3}
+      propertyPath: death_explosion_rate
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 8853153720102676538, guid: da8a59773956d2f4c8f2affba5c1b61a, type: 3}
+      propertyPath: death_explosion_radius
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 9107334734207645655, guid: da8a59773956d2f4c8f2affba5c1b61a, type: 3}
@@ -91058,3 +91140,4 @@ SceneRoots:
   - {fileID: 1285723899}
   - {fileID: 924474899}
   - {fileID: 2057825152}
+  - {fileID: 1930903504}

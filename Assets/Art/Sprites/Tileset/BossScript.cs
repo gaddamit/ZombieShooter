@@ -20,6 +20,8 @@ public class BossScript : MonoBehaviour
     [SerializeField] private float death_explosion_rate = 6f;
     [SerializeField] private GameObject explosion_prefab;
 
+    [SerializeField] private GameObject level_loader;
+
 
     private float button1_progress = 0;
     private float button2_progress = 0;
@@ -179,6 +181,7 @@ public class BossScript : MonoBehaviour
             yield return null;
         }
         keep_exploding = false;
+        level_loader.transform.position = GameObject.FindWithTag("Player").transform.position;
         // end of the game can trigger here, probably?
     }
 
