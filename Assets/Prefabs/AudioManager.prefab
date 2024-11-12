@@ -383,17 +383,35 @@ MonoBehaviour:
         paramDataPos: 000000000000000000000000000000000000000000000000000000000100000001000000000000000000000000000000010000000000000002000000
         paramByteDataSize: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
     events:
-    - name: SFX
-      isSystemEvent: 0
-      isGlobal: 1
     - name: FINISHED
       isSystemEvent: 1
       isGlobal: 0
+    - name: SFX_GUN
+      isSystemEvent: 0
+      isGlobal: 1
+    - name: SFX_DASH
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: SFX_DIE
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: SFX_PICKUP
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: SFX_DOOR
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: SFX_DOORCAP
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: SFX_KNIFE
+      isSystemEvent: 0
+      isGlobal: 0
     globalTransitions:
     - fsmEvent:
-        name: SFX
+        name: 
         isSystemEvent: 0
-        isGlobal: 1
+        isGlobal: 0
       toState: State 2
       linkStyle: 0
       linkConstraint: 0

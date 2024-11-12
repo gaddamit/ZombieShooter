@@ -372,8 +372,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.5, y: 0.9}
+  m_Offset: {x: -0.03, y: 0}
+  m_Size: {x: 0.29, y: 0.51}
   m_Direction: 0
 --- !u!114 &1113228380860196268
 MonoBehaviour:
@@ -3585,14 +3585,14 @@ MonoBehaviour:
           networkSync: 0
           value: {fileID: 0}
         fsmOwnerDefaultParams:
-        - ownerOption: 0
+        - ownerOption: 1
           gameObject:
             useVariable: 0
             name: 
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: {fileID: 0}
+            value: {fileID: 7036484338320204979}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -5487,7 +5487,7 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 1, g: 0.7845645, b: 0, a: 0.5019608}
+      key0: {r: 1, g: 0.7845645, b: 0, a: 0.24313726}
       key1: {r: 1, g: 1, b: 1, a: 0}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
