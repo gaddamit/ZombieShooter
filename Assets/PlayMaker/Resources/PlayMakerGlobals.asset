@@ -131,3 +131,17 @@ MonoBehaviour:
   - Dead
   - StopSpawning
   - SFX
+  - SFX_PICKUP
+  - SFX_GUN
+  - SFX_KNIFE
+  - SFX_DOORCAP
+  - SFX_DOOR
+  - SFX_DIE
+  - SFX_DASH
+  - SFX_EXPLODE
+  - SFX_FLAME
+  - SFX_SHOTTY
+  - SFX_HMG
+  - SFX_NADESHOT
+  - SFX_SPAWN
+  - SFX_PISTOL

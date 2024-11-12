@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 540077094563498349}
   - component: {fileID: 2513154783916446025}
   - component: {fileID: 184628484142943421}
-  - component: {fileID: 7684195382330280312}
   - component: {fileID: 3024527486655418783}
   m_Layer: 0
   m_Name: AudioManager
@@ -29,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 3319156065866402554}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.286814, y: -13.557003, z: -0.10405396}
+  m_LocalPosition: {x: 0, y: 0, z: -0.1040504}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -59,7 +58,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 50
-        y: 100
+        y: 148
         width: 100
         height: 16
       isBreakpoint: 0
@@ -67,14 +66,12 @@ MonoBehaviour:
       hideUnused: 0
       transitions: []
       actionData:
-        actionNames:
-        - HutongGames.PlayMaker.Actions.ArrayGet
-        customNames:
-        - 
-        actionEnabled: 01
-        actionIsOpen: 01
-        actionStartIndex: 00000000
-        actionHashCodes: 6ba59301
+        actionNames: []
+        customNames: []
+        actionEnabled: 
+        actionIsOpen: 
+        actionStartIndex: 
+        actionHashCodes: 
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -86,8 +83,88 @@ MonoBehaviour:
         layoutOptionParams: []
         fsmStringParams: []
         fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams: []
+        byteData: 
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 
+        paramName: []
+        paramDataPos: 
+        paramByteDataSize: 
+    - name: FunSound
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 207
+        y: 149
+        width: 100
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: 
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.ArrayGetRandom
+        - HutongGames.PlayMaker.Actions.PlaySound
+        customNames:
+        - 
+        - 
+        actionEnabled: 0101
+        actionIsOpen: 0101
+        actionStartIndex: 0000000005000000
+        actionHashCodes: 597887009cdc3905
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams:
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams:
+        - useVariable: 1
+          name: funsoundplay
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          typeName: UnityEngine.AudioClip
+          value: {fileID: 0}
         fsmVarParams:
-        - variableName: 
+        - variableName: funsoundplay
           objectType: UnityEngine.AudioClip
           useVariable: 1
           type: 12
@@ -113,9 +190,9 @@ MonoBehaviour:
             objectReferences: []
         fsmArrayParams:
         - useVariable: 1
-          name: Sounds
+          name: FUNSOUNDS
           tooltip: 
-          showInInspector: 0
+          showInInspector: 1
           networkSync: 0
           type: 12
           objectTypeName: UnityEngine.AudioClip
@@ -125,184 +202,64 @@ MonoBehaviour:
           stringValues: []
           vector4Values: []
           objectReferences:
-          - {fileID: 0}
-          - {fileID: 0}
-          - {fileID: 0}
-          - {fileID: 0}
-          - {fileID: 0}
-          - {fileID: 0}
-          - {fileID: 0}
-          - {fileID: 0}
-          - {fileID: 0}
-          - {fileID: 0}
-          - {fileID: 0}
-          - {fileID: 0}
-          - {fileID: 0}
-          - {fileID: 0}
-          - {fileID: 0}
-          - {fileID: 0}
-          - {fileID: 0}
-          - {fileID: 0}
-          - {fileID: 0}
-          - {fileID: 0}
-          - {fileID: 0}
-          - {fileID: 0}
-          - {fileID: 0}
-          - {fileID: 0}
-          - {fileID: 0}
-          - {fileID: 0}
-          - {fileID: 0}
-          - {fileID: 0}
-          - {fileID: 0}
-          - {fileID: 0}
-          - {fileID: 0}
-          - {fileID: 0}
-          - {fileID: 0}
-          - {fileID: 0}
-          - {fileID: 0}
-          - {fileID: 0}
-          - {fileID: 0}
-          - {fileID: 0}
-          - {fileID: 0}
-          - {fileID: 0}
-          - {fileID: 0}
-          - {fileID: 0}
-          - {fileID: 0}
-          - {fileID: 0}
-          - {fileID: 0}
-          - {fileID: 0}
-          - {fileID: 0}
-          - {fileID: 0}
-          - {fileID: 0}
-          - {fileID: 0}
-        fsmEnumParams: []
-        fsmFloatParams: []
-        fsmIntParams:
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 0
-        fsmBoolParams: []
-        fsmVector2Params: []
-        fsmVector3Params: []
-        fsmColorParams: []
-        fsmRectParams: []
-        fsmQuaternionParams: []
-        stringParams:
-        - 
-        byteData: 00
-        arrayParamSizes: 
-        arrayParamTypes: []
-        customTypeSizes: 
-        customTypeNames: []
-        paramDataType: 2900000010000000270000000100000017000000
-        paramName:
-        - array
-        - index
-        - storeValue
-        - everyFrame
-        - indexOutOfRange
-        paramDataPos: 0000000000000000000000000000000000000000
-        paramByteDataSize: 0000000000000000000000000100000000000000
-    - name: State 2
-      description: 
-      colorIndex: 0
-      position:
-        serializedVersion: 2
-        x: 207
-        y: 101
-        width: 100
-        height: 32
-      isBreakpoint: 0
-      isSequence: 0
-      hideUnused: 0
-      transitions:
-      - fsmEvent:
-          name: FINISHED
-          isSystemEvent: 1
-          isGlobal: 0
-        toState: 
-        linkStyle: 0
-        linkConstraint: 0
-        linkTarget: 0
-        colorIndex: 0
-      actionData:
-        actionNames:
-        - HutongGames.PlayMaker.Actions.GetEventInfo
-        customNames:
-        - 
-        actionEnabled: 01
-        actionIsOpen: 01
-        actionStartIndex: 00000000
-        actionHashCodes: d9ade603
-        unityObjectParams: []
-        fsmGameObjectParams:
-        - useVariable: 1
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: {fileID: 0}
-        - useVariable: 1
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: {fileID: 0}
-        fsmOwnerDefaultParams: []
-        animationCurveParams: []
-        functionCallParams: []
-        fsmTemplateControlParams: []
-        fsmEventTargetParams: []
-        fsmPropertyParams: []
-        layoutOptionParams: []
-        fsmStringParams:
-        - useVariable: 1
-          name: SoundName
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 
-        - useVariable: 1
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 
-        fsmObjectParams:
-        - useVariable: 1
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          typeName: 
-          value: {fileID: 0}
-        - useVariable: 1
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          typeName: 
-          value: {fileID: 0}
-        - useVariable: 1
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          typeName: 
-          value: {fileID: 0}
-        fsmVarParams: []
-        fsmArrayParams: []
+          - {fileID: 8300000, guid: e2b036ba4fa359a4dad97a96e5f6142c, type: 3}
+          - {fileID: 8300000, guid: 67fe24185a1928149a42bb917eabeb62, type: 3}
+          - {fileID: 8300000, guid: 45b600e18ea74c548b3d81f24a49a67d, type: 3}
+          - {fileID: 8300000, guid: 5419b071f3f34d7458199022603aa168, type: 3}
+          - {fileID: 8300000, guid: bb4dde9530f111a4c9bbb65f1bf65dae, type: 3}
+          - {fileID: 8300000, guid: bfbf4b8d0eaf45d4d928359ebc01e37f, type: 3}
+          - {fileID: 8300000, guid: f1907d8832e7c69468214593f0c5362a, type: 3}
+          - {fileID: 8300000, guid: 3b9345d3b70fb7f4b95413e1ec41a49d, type: 3}
+          - {fileID: 8300000, guid: 236964134919ba14e9cdbc71f2cf5af6, type: 3}
+          - {fileID: 8300000, guid: f2710ca98dbdff3438a3b360af6c462e, type: 3}
+          - {fileID: 8300000, guid: 042c5311e65e5f145ba5f96160d5a65c, type: 3}
+          - {fileID: 8300000, guid: 68d0ff61ccd44004589e01edafdedf5c, type: 3}
+          - {fileID: 8300000, guid: 9b8e4f1024de0f54fba31ed43a46955b, type: 3}
+          - {fileID: 8300000, guid: 420ea5d6674b36043a62f06f959c7526, type: 3}
+          - {fileID: 8300000, guid: 7ec8402af94e84940bc3e83b254a9442, type: 3}
+          - {fileID: 8300000, guid: fddb5c71b8b68cf49afc9b7d945250c6, type: 3}
+          - {fileID: 8300000, guid: 3240efa0894954f4ca035d8169b17209, type: 3}
+          - {fileID: 8300000, guid: 494b980ed41ba474ca75bc1b01675f7b, type: 3}
+          - {fileID: 8300000, guid: 8714ebd404b48744a85b70b5c7f81d58, type: 3}
+          - {fileID: 8300000, guid: a6dd682d0a9329e4cb6f0f90de87f3bb, type: 3}
+          - {fileID: 8300000, guid: 5928469cc37a0794399fc6dd528e659c, type: 3}
+          - {fileID: 8300000, guid: 338798a53d1ddc34192755e6a78e40f8, type: 3}
+          - {fileID: 8300000, guid: cedbd5957cc78db43a9c5910e8348458, type: 3}
+          - {fileID: 8300000, guid: c05ebf5d11e740446b2422bb8aa0528f, type: 3}
+          - {fileID: 8300000, guid: 78ae3cb62798db5429e8e26162da3818, type: 3}
+          - {fileID: 8300000, guid: 242532e529a3e11459224d7c04bb861b, type: 3}
+          - {fileID: 8300000, guid: 2d9151220e7fb2942bad05fd923cd8a1, type: 3}
+          - {fileID: 8300000, guid: bf05a4372a71d9147a3abe37df73cfbc, type: 3}
+          - {fileID: 8300000, guid: e7824ce3b62e59e48a074678da095c23, type: 3}
+          - {fileID: 8300000, guid: c4ddb0de9c1c0bc4faf7c8693e335f00, type: 3}
+          - {fileID: 8300000, guid: d6f206c86f8f50e4d9177a202cd7fa64, type: 3}
+          - {fileID: 8300000, guid: fb2662d3b4f7a564789e09444f4db77d, type: 3}
+          - {fileID: 8300000, guid: ce26837bcd82797459b0bb1a140cbf2a, type: 3}
+          - {fileID: 8300000, guid: 4c4ba45015b28124ca95436c9a63a048, type: 3}
+          - {fileID: 8300000, guid: 2b0ed170fd2d0d64b964e3a4e6762ade, type: 3}
+          - {fileID: 8300000, guid: 60ae39094113c7f4d8b310fb73a38b88, type: 3}
+          - {fileID: 8300000, guid: c2591050b4ae5a4418e3fe232b6b9d38, type: 3}
+          - {fileID: 8300000, guid: a43b7bbe905cef944ab315dd5cab4f7b, type: 3}
+          - {fileID: 8300000, guid: 021d4ea157489bd49b12f5cca8becd3a, type: 3}
+          - {fileID: 8300000, guid: 0ccf64655ea76d0429f7b94537f0a433, type: 3}
+          - {fileID: 8300000, guid: 9d67dab98e9e2cc4a99dee74fc116511, type: 3}
+          - {fileID: 8300000, guid: 5307d1f80188de0489d4b4db49722bc4, type: 3}
+          - {fileID: 8300000, guid: 63910222280170249a47a2fb5dad5d46, type: 3}
+          - {fileID: 8300000, guid: d2724b87d6f8a6047819aa0b92781109, type: 3}
+          - {fileID: 8300000, guid: c37e397bbf253a440a4c4daac42d95a8, type: 3}
+          - {fileID: 8300000, guid: 243562beb8c0d134386c495d81b1755b, type: 3}
+          - {fileID: 8300000, guid: 37e0be55b9d218041b1e16e22d6141f9, type: 3}
+          - {fileID: 8300000, guid: a81cafbd478ec21439304995f2401f7a, type: 3}
+          - {fileID: 8300000, guid: abc309c72014da74695ef973a56fa2f8, type: 3}
+          - {fileID: 8300000, guid: 3e6875aebe390254ab5b1005a211126b, type: 3}
         fsmEnumParams: []
         fsmFloatParams:
         - useVariable: 1
-          name: 
+          name: SFXVolume
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 0
+          value: 0.5
         fsmIntParams:
         - useVariable: 1
           name: 
@@ -311,19 +268,13 @@ MonoBehaviour:
           networkSync: 0
           value: 0
         fsmBoolParams:
-        - useVariable: 1
+        - useVariable: 0
           name: 
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 0
-        fsmVector2Params:
-        - useVariable: 1
-          name: SoundPos
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: {x: 0, y: 0}
+          value: 1
+        fsmVector2Params: []
         fsmVector3Params:
         - useVariable: 1
           name: 
@@ -331,57 +282,188 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: {x: 0, y: 0, z: 0}
-        fsmColorParams:
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams: []
+        byteData: 00
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 2900000027000000100000001100000001000000140000001c000000180000000f000000
+        paramName:
+        - array
+        - storeValue
+        - index
+        - noRepeat
+        - everyFrame
+        - gameObject
+        - position
+        - clip
+        - volume
+        paramDataPos: 000000000000000000000000000000000000000000000000000000000000000000000000
+        paramByteDataSize: 000000000000000000000000000000000100000000000000000000000000000000000000
+    - name: State 3
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 343
+        y: 98
+        width: 109
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: NormalSound
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: State 2
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.BoolTest
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: a4c8bf00
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams:
+        - useVariable: 1
+          name: FunMode
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams:
+        - FunSound
+        - NormalSound
+        byteData: 00
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 11000000170000001700000001000000
+        paramName:
+        - boolVariable
+        - isTrue
+        - isFalse
+        - everyFrame
+        paramDataPos: 00000000000000000100000000000000
+        paramByteDataSize: 00000000000000000000000001000000
+    - name: State 2
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 351
+        y: 160
+        width: 100
+        height: 16
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions: []
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.PlaySound
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: 9cdc3905
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams:
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          typeName: UnityEngine.AudioClip
+          value: {fileID: 8300000, guid: 9da9e4bf39e80fb4b968f889c454a5f4, type: 3}
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams:
+        - useVariable: 1
+          name: SFXVolume
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0.5
+        fsmIntParams: []
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params:
         - useVariable: 1
           name: 
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: {r: 0, g: 0, b: 0, a: 1}
-        fsmRectParams:
-        - useVariable: 1
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value:
-            serializedVersion: 2
-            x: 0
-            y: 0
-            width: 0
-            height: 0
-        fsmQuaternionParams:
-        - useVariable: 1
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: {x: 0, y: 0, z: 0, w: 0}
+          value: {x: 0, y: 0, z: 0}
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
         stringParams: []
         byteData: 
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 130000001200000011000000100000000f000000250000001c00000012000000130000001e0000002300000020000000210000001900000018000000
+        paramDataType: 140000001c000000180000000f000000
         paramName:
-        - sentByGameObject
-        - fsmName
-        - getBoolData
-        - getIntData
-        - getFloatData
-        - getVector2Data
-        - getVector3Data
-        - getStringData
-        - getGameObjectData
-        - getRectData
-        - getQuaternionData
-        - getMaterialData
-        - getTextureData
-        - getColorData
-        - getObjectData
-        paramDataPos: 000000000000000000000000000000000000000000000000000000000100000001000000000000000000000000000000010000000000000002000000
-        paramByteDataSize: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+        - gameObject
+        - position
+        - clip
+        - volume
+        paramDataPos: 00000000000000000000000000000000
+        paramByteDataSize: 00000000000000000000000000000000
     events:
     - name: FINISHED
       isSystemEvent: 1
@@ -391,28 +473,64 @@ MonoBehaviour:
       isGlobal: 1
     - name: SFX_DASH
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: SFX_DIE
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: SFX_PICKUP
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: SFX_DOOR
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: SFX_DOORCAP
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: SFX_KNIFE
+      isSystemEvent: 0
+      isGlobal: 1
+    - name: SFX_EXPLODE
+      isSystemEvent: 0
+      isGlobal: 1
+    - name: SFX_FLAME
+      isSystemEvent: 0
+      isGlobal: 1
+    - name: SFX_SHOTTY
+      isSystemEvent: 0
+      isGlobal: 1
+    - name: SFX_HMG
+      isSystemEvent: 0
+      isGlobal: 1
+    - name: SFX_NADESHOT
+      isSystemEvent: 0
+      isGlobal: 1
+    - name: SFX_SPAWN
+      isSystemEvent: 0
+      isGlobal: 1
+    - name: SFX_PISTOL
+      isSystemEvent: 0
+      isGlobal: 1
+    - name: FunSound
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: NormalSound
       isSystemEvent: 0
       isGlobal: 0
     globalTransitions:
     - fsmEvent:
-        name: 
+        name: FunSound
         isSystemEvent: 0
         isGlobal: 0
-      toState: State 2
+      toState: FunSound
+      linkStyle: 0
+      linkConstraint: 0
+      linkTarget: 0
+      colorIndex: 0
+    - fsmEvent:
+        name: SFX_SPAWN
+        isSystemEvent: 0
+        isGlobal: 1
+      toState: State 3
       linkStyle: 0
       linkConstraint: 0
       linkTarget: 0
@@ -430,12 +548,18 @@ MonoBehaviour:
         value: 
       vector2Variables:
       - useVariable: 1
-        name: SoundPos
+        name: 
         tooltip: 
         showInInspector: 0
         networkSync: 0
         value: {x: 0, y: 0}
-      vector3Variables: []
+      vector3Variables:
+      - useVariable: 1
+        name: SoundPos
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: {x: 0, y: 0, z: 0}
       colorVariables: []
       rectVariables: []
       quaternionVariables: []
@@ -446,7 +570,14 @@ MonoBehaviour:
         showInInspector: 0
         networkSync: 0
         value: {fileID: 0}
-      objectVariables: []
+      objectVariables:
+      - useVariable: 1
+        name: funsoundplay
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        typeName: UnityEngine.AudioClip
+        value: {fileID: 0}
       materialVariables: []
       textureVariables: []
       arrayVariables:
@@ -513,10 +644,73 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 0}
         - {fileID: 0}
+      - useVariable: 1
+        name: FUNSOUNDS
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        type: 12
+        objectTypeName: UnityEngine.AudioClip
+        floatValues: []
+        intValues: 
+        boolValues: 
+        stringValues: []
+        vector4Values: []
+        objectReferences:
+        - {fileID: 8300000, guid: e2b036ba4fa359a4dad97a96e5f6142c, type: 3}
+        - {fileID: 8300000, guid: 67fe24185a1928149a42bb917eabeb62, type: 3}
+        - {fileID: 8300000, guid: 45b600e18ea74c548b3d81f24a49a67d, type: 3}
+        - {fileID: 8300000, guid: 5419b071f3f34d7458199022603aa168, type: 3}
+        - {fileID: 8300000, guid: bb4dde9530f111a4c9bbb65f1bf65dae, type: 3}
+        - {fileID: 8300000, guid: bfbf4b8d0eaf45d4d928359ebc01e37f, type: 3}
+        - {fileID: 8300000, guid: f1907d8832e7c69468214593f0c5362a, type: 3}
+        - {fileID: 8300000, guid: 3b9345d3b70fb7f4b95413e1ec41a49d, type: 3}
+        - {fileID: 8300000, guid: 236964134919ba14e9cdbc71f2cf5af6, type: 3}
+        - {fileID: 8300000, guid: f2710ca98dbdff3438a3b360af6c462e, type: 3}
+        - {fileID: 8300000, guid: 042c5311e65e5f145ba5f96160d5a65c, type: 3}
+        - {fileID: 8300000, guid: 68d0ff61ccd44004589e01edafdedf5c, type: 3}
+        - {fileID: 8300000, guid: 9b8e4f1024de0f54fba31ed43a46955b, type: 3}
+        - {fileID: 8300000, guid: 420ea5d6674b36043a62f06f959c7526, type: 3}
+        - {fileID: 8300000, guid: 7ec8402af94e84940bc3e83b254a9442, type: 3}
+        - {fileID: 8300000, guid: fddb5c71b8b68cf49afc9b7d945250c6, type: 3}
+        - {fileID: 8300000, guid: 3240efa0894954f4ca035d8169b17209, type: 3}
+        - {fileID: 8300000, guid: 494b980ed41ba474ca75bc1b01675f7b, type: 3}
+        - {fileID: 8300000, guid: 8714ebd404b48744a85b70b5c7f81d58, type: 3}
+        - {fileID: 8300000, guid: a6dd682d0a9329e4cb6f0f90de87f3bb, type: 3}
+        - {fileID: 8300000, guid: 5928469cc37a0794399fc6dd528e659c, type: 3}
+        - {fileID: 8300000, guid: 338798a53d1ddc34192755e6a78e40f8, type: 3}
+        - {fileID: 8300000, guid: cedbd5957cc78db43a9c5910e8348458, type: 3}
+        - {fileID: 8300000, guid: c05ebf5d11e740446b2422bb8aa0528f, type: 3}
+        - {fileID: 8300000, guid: 78ae3cb62798db5429e8e26162da3818, type: 3}
+        - {fileID: 8300000, guid: 242532e529a3e11459224d7c04bb861b, type: 3}
+        - {fileID: 8300000, guid: 2d9151220e7fb2942bad05fd923cd8a1, type: 3}
+        - {fileID: 8300000, guid: bf05a4372a71d9147a3abe37df73cfbc, type: 3}
+        - {fileID: 8300000, guid: e7824ce3b62e59e48a074678da095c23, type: 3}
+        - {fileID: 8300000, guid: c4ddb0de9c1c0bc4faf7c8693e335f00, type: 3}
+        - {fileID: 8300000, guid: d6f206c86f8f50e4d9177a202cd7fa64, type: 3}
+        - {fileID: 8300000, guid: fb2662d3b4f7a564789e09444f4db77d, type: 3}
+        - {fileID: 8300000, guid: ce26837bcd82797459b0bb1a140cbf2a, type: 3}
+        - {fileID: 8300000, guid: 4c4ba45015b28124ca95436c9a63a048, type: 3}
+        - {fileID: 8300000, guid: 2b0ed170fd2d0d64b964e3a4e6762ade, type: 3}
+        - {fileID: 8300000, guid: 60ae39094113c7f4d8b310fb73a38b88, type: 3}
+        - {fileID: 8300000, guid: c2591050b4ae5a4418e3fe232b6b9d38, type: 3}
+        - {fileID: 8300000, guid: a43b7bbe905cef944ab315dd5cab4f7b, type: 3}
+        - {fileID: 8300000, guid: 021d4ea157489bd49b12f5cca8becd3a, type: 3}
+        - {fileID: 8300000, guid: 0ccf64655ea76d0429f7b94537f0a433, type: 3}
+        - {fileID: 8300000, guid: 9d67dab98e9e2cc4a99dee74fc116511, type: 3}
+        - {fileID: 8300000, guid: 5307d1f80188de0489d4b4db49722bc4, type: 3}
+        - {fileID: 8300000, guid: 63910222280170249a47a2fb5dad5d46, type: 3}
+        - {fileID: 8300000, guid: d2724b87d6f8a6047819aa0b92781109, type: 3}
+        - {fileID: 8300000, guid: c37e397bbf253a440a4c4daac42d95a8, type: 3}
+        - {fileID: 8300000, guid: 243562beb8c0d134386c495d81b1755b, type: 3}
+        - {fileID: 8300000, guid: 37e0be55b9d218041b1e16e22d6141f9, type: 3}
+        - {fileID: 8300000, guid: a81cafbd478ec21439304995f2401f7a, type: 3}
+        - {fileID: 8300000, guid: abc309c72014da74695ef973a56fa2f8, type: 3}
+        - {fileID: 8300000, guid: 3e6875aebe390254ab5b1005a211126b, type: 3}
       enumVariables: []
       categories:
       - 
-      variableCategoryIDs: 00000000000000000000000000000000
+      variableCategoryIDs: 00000000000000000000000000000000000000000000000000000000
     description: 
     docUrl: 
     showStateLabel: 0
@@ -2062,102 +2256,6 @@ MonoBehaviour:
     handleAnimatorIK: 0
   fsmTemplate: {fileID: 0}
   eventHandlerComponentsAdded: 0
---- !u!82 &7684195382330280312
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3319156065866402554}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!82 &3024527486655418783
 AudioSource:
   m_ObjectHideFlags: 0
