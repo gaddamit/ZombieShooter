@@ -511,6 +511,7 @@ MonoBehaviour:
         actionNames:
         - HutongGames.PlayMaker.Actions.EnableBehaviour
         - HutongGames.PlayMaker.Actions.DestroySelf
+        - HutongGames.PlayMaker.Actions.SendEvent
         - HutongGames.PlayMaker.Actions.CreateObject
         - HutongGames.PlayMaker.Actions.SetSpriteColor
         customNames:
@@ -518,10 +519,11 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 01010101
-        actionIsOpen: 01010101
-        actionStartIndex: 0000000005000000080000000e000000
-        actionHashCodes: 3a4cad05230cc80060532301c9f57904
+        - 
+        actionEnabled: 0101010101
+        actionIsOpen: 0101010101
+        actionStartIndex: 0000000005000000080000000c00000012000000
+        actionHashCodes: 3a4cad05230cc8005e69bb0460532301c9f57904
         unityObjectParams:
         - {fileID: 0}
         fsmGameObjectParams:
@@ -569,7 +571,39 @@ MonoBehaviour:
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
-        fsmEventTargetParams: []
+        fsmEventTargetParams:
+        - target: 4
+          excludeSelf:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          gameObject:
+            ownerOption: 0
+            gameObject:
+              useVariable: 0
+              name: 
+              tooltip: 
+              showInInspector: 0
+              networkSync: 0
+              value: {fileID: 0}
+          fsmName:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 
+          sendToChildren:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          fsmComponent: {fileID: 0}
         fsmPropertyParams: []
         layoutOptionParams: []
         fsmStringParams:
@@ -590,6 +624,12 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 0.25
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
         - useVariable: 1
           name: 
           tooltip: 
@@ -669,13 +709,14 @@ MonoBehaviour:
           value: {r: 0, g: 0, b: 0, a: 0}
         fsmRectParams: []
         fsmQuaternionParams: []
-        stringParams: []
-        byteData: 01
+        stringParams:
+        - SFX_EXPLODE
+        byteData: 0001
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 14000000120000000500000011000000110000000f00000011000000110000001300000013000000130000001c0000001c0000001300000014000000190000000f0000000f0000000f0000000f0000001100000001000000
+        paramDataType: 14000000120000000500000011000000110000000f00000011000000110000001f000000170000000f000000010000001300000013000000130000001c0000001c0000001300000014000000190000000f0000000f0000000f0000000f0000001100000001000000
         paramName:
         - gameObject
         - behaviour
@@ -685,6 +726,10 @@ MonoBehaviour:
         - delay
         - realTime
         - detachChildren
+        - eventTarget
+        - sendEvent
+        - delay
+        - everyFrame
         - gameObject
         - parent
         - spawnPoint
@@ -699,8 +744,8 @@ MonoBehaviour:
         - alpha
         - resetOnExit
         - everyFrame
-        paramDataPos: 00000000000000000000000000000000010000000000000002000000030000000000000001000000020000000000000001000000030000000100000000000000010000000200000003000000040000000400000000000000
-        paramByteDataSize: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000
+        paramDataPos: 0000000000000000000000000000000001000000000000000200000003000000000000000000000001000000000000000000000001000000020000000000000001000000030000000100000000000000020000000300000004000000050000000400000001000000
+        paramByteDataSize: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000
     - name: Initialize
       description: 
       colorIndex: 0
@@ -930,6 +975,9 @@ MonoBehaviour:
     - name: DestroyWithoutCollision
       isSystemEvent: 0
       isGlobal: 0
+    - name: SFX_EXPLODE
+      isSystemEvent: 0
+      isGlobal: 1
     globalTransitions: []
     variables:
       floatVariables:
