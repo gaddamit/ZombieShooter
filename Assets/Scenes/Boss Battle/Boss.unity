@@ -38,7 +38,6 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3869,10 +3868,10 @@ Camera:
   m_LensShift: {x: 0, y: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0
-    y: 0.0129629625
-    width: 1.0458333
-    height: 1.0458333
+    x: 0.36816224
+    y: 0
+    width: 0.41193745
+    height: 0.41202188
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -16849,6 +16848,63 @@ MonoBehaviour:
   m_Area: 0
   m_IgnoreFromBuild: 0
   m_AffectedAgents: ffffffff
+--- !u!1001 &364980076
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 176431704201325319, guid: 0a713b06925234977bdea5c31b9a8c11, type: 3}
+      propertyPath: m_Name
+      value: MeleeKnife
+      objectReference: {fileID: 0}
+    - target: {fileID: 7547742173209330617, guid: 0a713b06925234977bdea5c31b9a8c11, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -35.40879
+      objectReference: {fileID: 0}
+    - target: {fileID: 7547742173209330617, guid: 0a713b06925234977bdea5c31b9a8c11, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -28.882427
+      objectReference: {fileID: 0}
+    - target: {fileID: 7547742173209330617, guid: 0a713b06925234977bdea5c31b9a8c11, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7547742173209330617, guid: 0a713b06925234977bdea5c31b9a8c11, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7547742173209330617, guid: 0a713b06925234977bdea5c31b9a8c11, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7547742173209330617, guid: 0a713b06925234977bdea5c31b9a8c11, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7547742173209330617, guid: 0a713b06925234977bdea5c31b9a8c11, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7547742173209330617, guid: 0a713b06925234977bdea5c31b9a8c11, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7547742173209330617, guid: 0a713b06925234977bdea5c31b9a8c11, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7547742173209330617, guid: 0a713b06925234977bdea5c31b9a8c11, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0a713b06925234977bdea5c31b9a8c11, type: 3}
 --- !u!4 &368994777 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5184521436329036895, guid: da8a59773956d2f4c8f2affba5c1b61a, type: 3}
@@ -40325,11 +40381,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2533644655825952112, guid: cdbecd9e3f1234b7ab7c9a311a960745, type: 3}
       propertyPath: m_LocalScale.x
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2533644655825952112, guid: cdbecd9e3f1234b7ab7c9a311a960745, type: 3}
       propertyPath: m_LocalScale.y
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2533644655825952112, guid: cdbecd9e3f1234b7ab7c9a311a960745, type: 3}
       propertyPath: m_LocalPosition.x
@@ -90976,3 +91032,4 @@ SceneRoots:
   - {fileID: 924474899}
   - {fileID: 2057825152}
   - {fileID: 1930903504}
+  - {fileID: 364980076}
