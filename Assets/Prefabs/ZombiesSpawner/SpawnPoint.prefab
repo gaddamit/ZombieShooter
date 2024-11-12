@@ -529,7 +529,7 @@ MonoBehaviour:
       stringVariables:
       - useVariable: 1
         name: ZombiePoolName
-        tooltip: Basic/Speed
+        tooltip: Basic/Speed/Treasure/Exploding
         showInInspector: 1
         networkSync: 0
         value: 
