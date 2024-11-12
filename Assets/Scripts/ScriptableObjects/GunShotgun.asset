@@ -15,7 +15,7 @@ MonoBehaviour:
   gunName: Shotgun
   description: Shotgun
   fireRate: 2
-  range: 5
+  range: 3
   maxAmmo: 20
   recoil: 0
   spread: 1
