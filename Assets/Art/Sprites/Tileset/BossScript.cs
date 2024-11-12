@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using HutongGames.PlayMaker;
 
 public class BossScript : MonoBehaviour
 {
@@ -116,7 +117,7 @@ public class BossScript : MonoBehaviour
     }
     private IEnumerator ShieldDeactivated()
     {
-
+        PlayMakerFSM.BroadcastEvent("SFX_DOOR");
         while (shield_down_timer < shield_down_duration)
         {
             shield_down_timer += Time.deltaTime;
@@ -192,6 +193,7 @@ public class BossScript : MonoBehaviour
             Vector2 random_position = Random.insideUnitCircle * death_explosion_radius;
             Vector2 spawn_position = (Vector2)transform.position + random_position;
             Instantiate(explosion_prefab, spawn_position, Quaternion.identity);
+            PlayMakerFSM.BroadcastEvent("SFX_EXPLODE");
             yield return new WaitForSeconds(1f / death_explosion_rate);
         }
     }

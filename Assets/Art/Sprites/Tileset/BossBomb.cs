@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using HutongGames.PlayMaker;
 
 public class BossBomb : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class BossBomb : MonoBehaviour
     public void SetExplosionTarget(Vector2 target)
     {
         explode_here = target;
+        PlayMakerFSM.BroadcastEvent("SFX_NADESHOT");
     }
 
     private void FixedUpdate()
@@ -25,6 +27,7 @@ public class BossBomb : MonoBehaviour
 
     void Explode()
     {
+        PlayMakerFSM.BroadcastEvent("SFX_EXPLODE");
         // Apply explosion force and damage to nearby rigidbody object
         Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, explosion_radius);
         foreach (Collider2D hit in colliders)
