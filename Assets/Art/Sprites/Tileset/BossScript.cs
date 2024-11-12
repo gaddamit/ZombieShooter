@@ -54,6 +54,7 @@ public class BossScript : MonoBehaviour
         if (boss_health <= 0)
         {
             head_hitbox.enabled = false;
+            head_animator.Play("die");
         }
 
         else
@@ -122,6 +123,7 @@ public class BossScript : MonoBehaviour
         if (shield != null & boss_health > 0)
         {
             shield.SetActive(true);
+            head_hitbox.enabled = false;
         }
         button1_progress = 0f;
         button2_progress = 0f;
@@ -129,7 +131,6 @@ public class BossScript : MonoBehaviour
         button_progress_2.SetActive(false);
         shield_down_timer = 0f;
         is_shield_active = true;
-        head_hitbox.enabled = false;
         shield_down_coroutine_active = false;
 
     }
@@ -138,7 +139,6 @@ public class BossScript : MonoBehaviour
         boss_health = boss_health - 1;
         if (boss_health >0)
         {
-            head_hitbox.enabled = false;
             Debug.Log(boss_health);
             StartCoroutine(PainState());
         }
