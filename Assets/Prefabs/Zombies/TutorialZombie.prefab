@@ -16,6 +16,14 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4584736269879822367, guid: 12eb23828cd144feca1432ad987df4bf, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7602954239129460583, guid: 12eb23828cd144feca1432ad987df4bf, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8665155179808706958, guid: 12eb23828cd144feca1432ad987df4bf, type: 3}
       propertyPath: m_Enabled
       value: 0

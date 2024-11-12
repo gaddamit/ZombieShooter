@@ -1732,7 +1732,7 @@ MonoBehaviour:
       variableCategoryIDs: 00000000000000000000000000000000
     description: 
     docUrl: 
-    showStateLabel: 1
+    showStateLabel: 0
     maxLoopCount: 0
     watermark: 
     password: 
