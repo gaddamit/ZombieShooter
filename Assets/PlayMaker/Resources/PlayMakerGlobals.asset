@@ -20,6 +20,18 @@ MonoBehaviour:
       showInInspector: 1
       networkSync: 0
       value: 50
+    - useVariable: 1
+      name: MusVolume
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0.5
+    - useVariable: 1
+      name: SFXVolume
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0.5
     intVariables:
     - useVariable: 1
       name: NumberOfCapturePoints
@@ -109,7 +121,7 @@ MonoBehaviour:
     enumVariables: []
     categories:
     - 
-    variableCategoryIDs: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    variableCategoryIDs: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   events:
   - StartSpawning
   - SpawnZombies

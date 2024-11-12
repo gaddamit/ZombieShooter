@@ -1408,12 +1408,12 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 1
-        - useVariable: 0
-          name: 
+        - useVariable: 1
+          name: MusVolume
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 1
+          value: 0.5
         fsmIntParams: []
         fsmBoolParams:
         - useVariable: 0
@@ -1536,8 +1536,8 @@ MonoBehaviour:
           objectReferences: []
         fsmEnumParams: []
         fsmFloatParams:
-        - useVariable: 0
-          name: 
+        - useVariable: 1
+          name: MusVolume
           tooltip: 
           showInInspector: 0
           networkSync: 0
@@ -1548,7 +1548,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 1
           networkSync: 0
-          value: 0
+          value: 10
         fsmBoolParams:
         - useVariable: 0
           name: 
@@ -1674,8 +1674,8 @@ MonoBehaviour:
           objectReferences: []
         fsmEnumParams: []
         fsmFloatParams:
-        - useVariable: 0
-          name: 
+        - useVariable: 1
+          name: MusVolume
           tooltip: 
           showInInspector: 0
           networkSync: 0
@@ -1686,7 +1686,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 1
           networkSync: 0
-          value: 0
+          value: 10
         fsmBoolParams:
         - useVariable: 0
           name: 
@@ -1873,12 +1873,12 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 0
-        - useVariable: 0
-          name: 
+        - useVariable: 1
+          name: MusVolume
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 1
+          value: 0.5
         fsmIntParams: []
         fsmBoolParams:
         - useVariable: 0

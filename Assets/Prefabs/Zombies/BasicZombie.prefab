@@ -224,7 +224,7 @@ NavMeshAgent:
   m_Height: 0.8
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
+  m_ObstacleAvoidanceType: 3
 --- !u!114 &8719563757520326021
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1798,7 +1798,7 @@ MonoBehaviour:
         - {fileID: 6799398336472871031, guid: f3fe4bf10094944f8be65242b50905ac, type: 3}
         - {fileID: 7532088396695559001, guid: b2d47d97a619a4f49be64af973632a27, type: 3}
         - {fileID: 241882065937011046, guid: 655a0733e3ee34269a2e0711e855ff9d, type: 3}
-        - {fileID: 241882065937011046, guid: 4be548ec9071a493ab91c8e3810c0aa2, type: 3}
+        - {fileID: 6799398336472871031, guid: b7f33f940c2924e33b8222f45316030c, type: 3}
         - {fileID: 6799398336472871031, guid: b7f33f940c2924e33b8222f45316030c, type: 3}
         - {fileID: 0}
         - {fileID: 0}
