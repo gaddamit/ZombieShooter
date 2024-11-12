@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gunName: FlameThrower
   description: FlameThrower
-  fireRate: 0.1
-  range: 10
+  fireRate: 0.05
+  range: 20
   maxAmmo: 100
-  recoil: 0
+  recoil: 1
   spread: 0
   bulletPrefab: {fileID: 3621924927723889370, guid: e0699daebb2dc49908fff905442f1c42, type: 3}
   levelSprite: {fileID: -1035832423, guid: c90fc6250289148dbab5a934c720f27e, type: 3}

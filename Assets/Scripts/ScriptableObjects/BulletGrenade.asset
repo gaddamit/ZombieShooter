@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: BulletGrenade
   m_EditorClassIdentifier: 
   bulletName: Grenade Bullet
-  damage: 1
-  travelTime: 0.5
+  damage: 10
+  travelTime: 0.25
   lifeTime: 10
   size: 1
   bulletSprite: {fileID: 769648784, guid: c90fc6250289148dbab5a934c720f27e, type: 3}

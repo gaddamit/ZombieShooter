@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b319a90c63792430592312deb7496ee1, type: 3}
   m_Name: BulletFlame
   m_EditorClassIdentifier: 
-  bulletName: Pistol Bullet
-  damage: 1
-  travelTime: 3
-  lifeTime: 1
+  bulletName: Flame Bullet
+  damage: 2
+  travelTime: 0.5
+  lifeTime: 0.5
   size: 1
   bulletSprite: {fileID: 21300000, guid: b6c2cba40d6a940089fff9bc78997991, type: 3}
   hitEffect: {fileID: 0}

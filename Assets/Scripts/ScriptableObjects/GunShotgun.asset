@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gunName: Shotgun
   description: Shotgun
-  fireRate: 2
-  range: 3
-  maxAmmo: 20
-  recoil: 0
+  fireRate: 0.5
+  range: 4
+  maxAmmo: 10
+  recoil: 20
   spread: 1
   bulletPrefab: {fileID: 3621924927723889370, guid: 031db8f90308d414ca6ce694a0505082, type: 3}
   levelSprite: {fileID: -607456373, guid: c90fc6250289148dbab5a934c720f27e, type: 3}
