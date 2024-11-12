@@ -1996,11 +1996,9 @@ MonoBehaviour:
         stringValues: []
         vector4Values: []
         objectReferences:
-        - {fileID: 6799398336472871031, guid: f3fe4bf10094944f8be65242b50905ac, type: 3}
-        - {fileID: 241882065937011046, guid: 655a0733e3ee34269a2e0711e855ff9d, type: 3}
-        - {fileID: 6799398336472871031, guid: b7f33f940c2924e33b8222f45316030c, type: 3}
-        - {fileID: 241882065937011046, guid: 4be548ec9071a493ab91c8e3810c0aa2, type: 3}
         - {fileID: 7532088396695559001, guid: b2d47d97a619a4f49be64af973632a27, type: 3}
+        - {fileID: 6799398336472871031, guid: b7f33f940c2924e33b8222f45316030c, type: 3}
+        - {fileID: 241882065937011046, guid: 655a0733e3ee34269a2e0711e855ff9d, type: 3}
       enumVariables: []
       categories:
       - 
@@ -2062,7 +2060,7 @@ Animator:
   m_GameObject: {fileID: 1393830368268018233}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 0ee79f9cc5cb7ff499c4c59ef86fd50c, type: 2}
+  m_Controller: {fileID: 9100000, guid: 6e0a02569a0534397ab1aa849483bdb5, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -2105,6 +2103,6 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.1}
-  m_Size: {x: 0.5, y: 0.8}
+  m_Offset: {x: -0.12912498, y: -0.03543763}
+  m_Size: {x: 0.39670005, y: 0.8154947}
   m_Direction: 0
