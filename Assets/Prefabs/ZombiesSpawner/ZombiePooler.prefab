@@ -84,7 +84,7 @@ MonoBehaviour:
         - 
         - 
         actionEnabled: 01010101
-        actionIsOpen: 01010101
+        actionIsOpen: 00000000
         actionStartIndex: 00000000060000000c00000012000000
         actionHashCodes: b1f58003b1f58003b1f58003b1f58003
         unityObjectParams: []
@@ -101,16 +101,16 @@ MonoBehaviour:
           showInInspector: 1
           networkSync: 0
           value: {fileID: 3557125607181480207, guid: 391220296e0954d13abfb8ac9d590638, type: 3}
-        - useVariable: 0
-          name: 
+        - useVariable: 1
+          name: ExplosiveZombie
           tooltip: 
-          showInInspector: 0
+          showInInspector: 1
           networkSync: 0
           value: {fileID: 1393830368268018233, guid: 516fc78a6df194b86b675c435b70637c, type: 3}
-        - useVariable: 0
-          name: 
+        - useVariable: 1
+          name: TresureZombie
           tooltip: 
-          showInInspector: 0
+          showInInspector: 1
           networkSync: 0
           value: {fileID: 1393830368268018233, guid: 97dcbaed3a58c416080e21fd6a3a0112, type: 3}
         fsmOwnerDefaultParams: []
@@ -138,13 +138,13 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 
+          value: Exploding
         - useVariable: 0
           name: 
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 
+          value: Treasure
         fsmObjectParams: []
         fsmVarParams: []
         fsmArrayParams: []
@@ -175,16 +175,10 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 0
-        - useVariable: 0
-          name: 
+        - useVariable: 1
+          name: NumOfExplosiveZombie
           tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 20
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
+          showInInspector: 1
           networkSync: 0
           value: 0
         - useVariable: 0
@@ -192,7 +186,13 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 20
+          value: 0
+        - useVariable: 1
+          name: NumOfTreasureZombie
+          tooltip: 
+          showInInspector: 1
+          networkSync: 0
+          value: 0
         - useVariable: 0
           name: 
           tooltip: 
@@ -359,6 +359,18 @@ MonoBehaviour:
         showInInspector: 1
         networkSync: 0
         value: 50
+      - useVariable: 1
+        name: NumOfExplosiveZombie
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        value: 0
+      - useVariable: 1
+        name: NumOfTreasureZombie
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        value: 0
       boolVariables: []
       stringVariables: []
       vector2Variables: []
@@ -379,6 +391,18 @@ MonoBehaviour:
         showInInspector: 1
         networkSync: 0
         value: {fileID: 3557125607181480207, guid: 391220296e0954d13abfb8ac9d590638, type: 3}
+      - useVariable: 1
+        name: ExplosiveZombie
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        value: {fileID: 1393830368268018233, guid: 516fc78a6df194b86b675c435b70637c, type: 3}
+      - useVariable: 1
+        name: TresureZombie
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        value: {fileID: 1393830368268018233, guid: 97dcbaed3a58c416080e21fd6a3a0112, type: 3}
       objectVariables: []
       materialVariables: []
       textureVariables: []
@@ -388,7 +412,7 @@ MonoBehaviour:
       - 
       - Number to Pool
       - Zombie Prefabs
-      variableCategoryIDs: 01000000010000000200000002000000
+      variableCategoryIDs: 0100000001000000010000000100000002000000020000000200000002000000
     description: 
     docUrl: 
     showStateLabel: 0
