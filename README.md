@@ -1,8 +1,14 @@
-# Zombie Shooter
+# Moshpit Z
 
-## About
+Moshpit Z is a game project for our Rapid Game Development class.  
+Made in Unity with Playmaker.
 
-## Mechanics
+## Itch Project Page
+[Moshpit Z](https://gaddamit.itch.io/moshpitz)
 
-## Credits
-
+## Contributors
+Alistair  
+Caden  
+Christian  
+Leo  
+Luis  
